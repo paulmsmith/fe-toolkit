@@ -1,0 +1,18 @@
+{
+  "name": "dwp-front-end",
+  "version": "1.0.0",
+  "description": "A single place of reference for consumable front-end development patterns and resources for The Department for Work and Pensions digital.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fractal",
+    "html",
+    "css",
+    "javascript",
+    "sass"
+  ],
+  "author": "Paul Michael Smith <mail@airfont.co.uk> (http://airfront.co.uk)",
+  "license": "ISC"
+}
