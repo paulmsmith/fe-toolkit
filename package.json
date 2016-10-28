@@ -16,6 +16,7 @@
   "author": "Paul Michael Smith <mail@airfont.co.uk> (http://airfront.co.uk)",
   "license": "ISC",
   "dependencies": {
-    "@frctl/fractal": "^1.0.8"
+    "@frctl/fractal": "^1.0.8",
+    "@frctl/nunjucks": "^1.0.1"
   }
 }
