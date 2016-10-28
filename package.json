@@ -14,5 +14,8 @@
     "sass"
   ],
   "author": "Paul Michael Smith <mail@airfont.co.uk> (http://airfront.co.uk)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@frctl/fractal": "^1.0.8"
+  }
 }
