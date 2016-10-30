@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A single place of reference for consumable front-end development patterns and resources for The Department for Work and Pensions digital.",
   "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulmsmith/fe-toolkit"
+  },
   "keywords": [
     "fractal",
     "html",
