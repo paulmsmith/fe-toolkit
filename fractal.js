@@ -25,11 +25,16 @@ const themeconfig = mandelbrot({
     nav: ["docs", "components"]
 });
 
-/* fractal instantiation
+/* project meta data
 ----------------------------------------------------------------------------- */
 
 /* Set the title of the project */
 fractal.set('project.title', 'DWP Frontend Toolkit');
+fractal.set('project.version', 'v1.0');
+fractal.set('project.author', 'Paul Smith');
+
+/* fractal components
+----------------------------------------------------------------------------- */
 
 // register the Nunjucks adapter for components
 fractal.components.engine(nunj);
@@ -40,6 +45,9 @@ fractal.components.set('ext', '.nunj');
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
 
+/* fractal docs
+----------------------------------------------------------------------------- */
+
 // register the Nunjucks adapter for documentation
 fractal.docs.engine(nunj);
 
@@ -49,11 +57,22 @@ fractal.docs.set('ext', '.nunj');
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
 
+/* fractal web UI
+----------------------------------------------------------------------------- */
+
 // specify a directory to hold the theme override templates
 themeconfig.addLoadPath(__dirname + '/theme_overrides');
 
 /* tell fractal to use the configured theme by default */
 fractal.web.theme(themeconfig);
 
+/* set the directory within which any static HTML exports of the web UI should 
+be generated */
+fractal.web.set('builder.dest', __dirname + '/build');
+
 /* Tell fractal to use browsersync by default */
 fractal.web.set('server.sync', true);
+
+/* serve a directory of static assets via the web UI (so that you can link to 
+stylesheets from your preview layouts, for example) */
+fractal.web.set('static.path', __dirname + '/public');
