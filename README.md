@@ -6,7 +6,7 @@ To form part of the DWP Design System. A trial for the DWP Frontend Toolkit usin
 
 - [X] Scafford app structure
 - [X] Update fractal configuration + theme
-- [ ] Write documentation (Introduction/Overview, how-to, principle, code standards..) **[Started this]**
+- [ ] Write documentation (Introduction/Overview, how-to, principles, code standards..) **[Started this]**
 - [ ] Integrate existing gov.uk frontend resources
 - [ ] Write gulp tasks (Fractal CLI, linting, building, compressing assets, ..etc)
 
