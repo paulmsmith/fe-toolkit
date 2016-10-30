@@ -10,7 +10,7 @@ To form part of the DWP Design System. A trial for the DWP Frontend Toolkit usin
 - [ ] Integrate existing gov.uk frontend resources
 - [ ] Write gulp tasks (Fractal CLI, linting, building, compressing assets, ..etc)
 
-
+[See more in the project 'build'](https://github.com/paulmsmith/fe-toolkit/projects/2)
 
 ## Questions / Feedback
 
