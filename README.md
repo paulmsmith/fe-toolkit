@@ -2,7 +2,7 @@
 
 ![POSTER FOR TOOLKIT](https://github.com/paulmsmith/fe-toolkit/blob/master/public/images/docs/dwp_fe_poster.jpg?raw=true)
 
-To form part of the DWP Design System. A trial for the DWP Frontend Toolkit using Fractal. I'm getting this to a place where people can contribute, push back, improve.
+To form part of the DWP Design System. A trial for the DWP Frontend Toolkit using [Fractal](http://fractal.build). I'm getting this to a place where people can contribute, push back, improve.
 
 ## To do:
 
