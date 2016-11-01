@@ -36,10 +36,13 @@ Pattern is reviewed, tested and built in the best way possible:
 
 ## Our users:
 
-- Developers (internal and external):
+### Developers (internal and external)
+
 - Front-end developers
 - 'Full stack developers' & Backend developers
-- Designers (internal & external):
+
+### Designers (internal & external)
+
 - Interaction Designers
 
 ## What we’re not doing:
