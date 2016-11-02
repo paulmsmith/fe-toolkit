@@ -1,3 +1,1 @@
-<div class="test">Test</div>
-
-{{ 'blah' | log }}
+<div class="test">{{ title }}</div>

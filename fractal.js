@@ -45,6 +45,8 @@ fractal.components.set('ext', '.nunj');
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
 
+fractal.components.set('default.preview', '@preview');
+
 /* fractal docs
 ----------------------------------------------------------------------------- */
 
