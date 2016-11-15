@@ -1,0 +1,14 @@
+{
+  "paths": {
+    "public": "public/",
+    "assets" : "src/assets/",
+    "govukModules": "govuk_modules/",
+    "nodeModules": "node_modules/",
+    "fractal": {
+      "components" : "src/components/",
+      "docs" : "src/docs/",
+      "theme" : "fractal/theme",
+      "lib" : "fractal/lib"
+    }
+  }
+}
