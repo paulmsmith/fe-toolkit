@@ -1,0 +1,9 @@
+<div id="skiplink-container">
+  <div>
+    <a href="#content" class="skiplink">{{ skip_link_message|default('Skip to main content') }}</a>
+  </div>
+</div>
+
+<div class="dwp-c-global-header">
+  <h1 class="dwp-c-global-header__title">DWP Digital &ndash; Design Patterns</h1>
+</div>

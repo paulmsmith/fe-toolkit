@@ -1,0 +1,69 @@
+// FULL WIDTH AND FIXED WIDTH HEADER STYLES
+
+#global-header .header-proposition #proposition-menu{
+	margin-top: 0;
+}
+
+#wrapper{
+    min-height: 500px;
+}
+
+// Adjust grid
+#global-header.with-proposition .header-wrapper {
+	.header-global{ width: 50% }
+	.header-proposition{ width: 50% }
+}
+
+// Product name
+.product-name{
+	font-weight: 400;
+	padding: 0 5px;
+	font-size: 24px;
+}
+
+// Smaller phase tag in header
+#global-header .phase-banner-beta {
+    border: 0;
+	.phase-tag{
+		font-size: 14px;
+	    vertical-align: middle;
+	    background: #005EA5;
+	}
+}
+
+// Right-aligned header links
+#global-header .header-proposition #proposition-links.right-aligned{
+	li{
+		float: right;
+    	padding: 0 0 0 15px;
+	}
+}
+
+// FULL WIDTH HEADER
+
+.header-full-width{
+	#global-header .header-wrapper {
+		margin: 0;
+		max-width: none;
+	}
+
+	#global-header-bar{
+    	width: 100%;
+		max-width: none;
+    	margin-left: 0;
+	}
+}
+
+// FIXED POSITION HEADER
+
+.header-fixed-position{
+	#global-header{
+	    position: fixed;
+	    z-index: 100;
+	}
+	#global-header-bar{
+		position: fixed;
+	    top: 53px;
+	    z-index: 100;
+	}
+}

@@ -4,11 +4,13 @@
     "assets" : "src/assets/",
     "govukModules": "govuk_modules/",
     "nodeModules": "node_modules/",
+    "lib": "lib",
     "fractal": {
       "components" : "src/components/",
       "docs" : "src/docs/",
       "theme" : "fractal/theme",
-      "lib" : "fractal/lib"
+      "lib" : "fractal/lib",
+      "sass": "fractal/sass"
     }
   }
 }

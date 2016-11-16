@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="{{ html_lang|default('en') }}"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+    window.frctl = {
+        env: '{% if frctl.env.server %}server{% else %}static{% endif %}'
+    };
+    </script>
+
+    {# <link rel="shortcut icon" href="{{ path('/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="mask-icon" href="{{ path('/images/gov.uk_logotype_crown.svg') }}" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ path('/images/apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ path('/images/apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ path('/images/apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ path('/images/apple-touch-icon-60x60.png') }}"> #}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{{ path('/images/opengraph-image.png') }}">
+    
+    {% include 'partials/stylesheets.nunj' %}
+    
+    <link href="{{ path('/stylesheets/fonts.css') }}" media="screen" rel="stylesheet" />
+    <link href="{{ path('/stylesheets/application.css') }}" media="screen" rel="stylesheet" />
+
+	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ frctl.get('project.title') }}</title>
+</head>
+
+
+
+<body>
+
+{% block page %}{% endblock %}
+
+{% include 'partials/foot.nunj' %}
+</body>
+</html>

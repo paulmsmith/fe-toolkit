@@ -21,8 +21,14 @@ const nunj = require('@frctl/nunjucks')(Object.assign({
 
 /* create a new instance with custom config options */
 const themeconfig = mandelbrot({
-    skin: "black",
-    nav: ["docs", "components"]
+    // skin: "black",
+    // nav: ["docs", "components"]
+    "skin": "black",
+    "nav": ["docs", "components"],
+    "panels": ["notes", "html", "view", "context", "resources", "info"],
+    "static": {
+        "mount": "theme"
+    }
 });
 
 /* project meta data

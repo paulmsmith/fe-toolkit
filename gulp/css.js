@@ -1,8 +1,8 @@
-'use strict';
-
-// Sass and CSS Stuff
+'use strict'
 
 const gulp = require('gulp')
+const gutil = require('gulp-util')
+const plumber = require('gulp-plumber')
 const config = require('./config.json')
 
 const sass = require('gulp-sass')
@@ -17,8 +17,16 @@ const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR
 const browserSync       = require('browser-sync').create();
 const reload            = browserSync.reload;
 
+
 gulp.task('css', function() {
-  return gulp.src(config.paths.assets + '/sass/styles.scss')
+  return gulp.src([
+    config.paths.fractal.sass + '/**/*',
+    config.paths.assets + '/sass/**/*'
+  ])
+  .pipe(plumber(function (error) {
+      gutil.log(error.message);
+      this.emit('end');
+  }))
   .pipe(sassGlob())
   .pipe(sass({
     outputStyle: 'expanded',
@@ -27,8 +35,6 @@ gulp.task('css', function() {
       'govuk_modules/govuk_template/assets/stylesheets',
       'govuk_modules/govuk-elements-sass/'
     ],
-  })).on('error', notify.onError(function (error) {
-    return "Problem file : " + error.message;
   }))
   .pipe(sourcemaps.init())
   .pipe(sourcemaps.write())

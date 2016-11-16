@@ -1,56 +1,42 @@
-var gulp = require('gulp')
-var gutil = require('gulp-util')
-var runSequence = require('run-sequence')
+'use strict'
 
-gulp.task('copy-govuk-modules',
-  gulp.series([
+const gulp = require('gulp')
+const config = require('./config.json')
+const runSequence = require('run-sequence')
+
+gulp.task('copy-govuk-modules', function (done) {
+  runSequence(
     'copy-toolkit',
     'copy-template-assets',
     'copy-elements-sass',
-    'copy-template'
-  ])
-)
+    'copy-template',
+    done
+  )
+})
 
-gulp.task('copy-assets',
-  function () {
-    return gulp.src([
-      '!' + config.paths.assets + 'sass{,/**/*}',
-      config.paths.assets + '/**'
-    ])
-    .pipe(gulp.dest(config.paths.public))
-  }
-)
-
-gulp.task('generate-assets', 
-  gulp.series(
+gulp.task('generate-assets', function(done){
+  runSequence(
     'clean',
     'copy-govuk-modules',
-    'sass',
+    'css',
     'copy-assets',
     done
   )
-)
+})
 
-gulp.task('watch',
-  gulp.series(
+gulp.task('watch', function(done){
+  runSequence(
+    'watch-assets',
     'watchCSS',
-    'watchJS'
+    'watchJS',
     done
   )
-)
+})
 
-gulp.task('dev', 
-  gulp.parallel(
+gulp.task('default', function(done) {
+  runSequence(
     'frctlStart',
     'generate-assets',
     'watch'
-));
-
-gulp.task('default',
-  gulp.parallel(
-    'frctlStart',
-    'generate-assets',
-    'watch',
-    done
-  )
-)
+  )  
+})

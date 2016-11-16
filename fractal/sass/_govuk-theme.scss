@@ -1,0 +1,249 @@
+// Chock full of hacks and overwrites of the default 'mandlebrot' theme
+// If we use Fractal for real we'll need to build this theme up from scratch
+
+body, h1 {
+  font-family: 'nta';
+}
+
+.dwp-c-global-header{
+  background: #000;
+  padding: 20px;
+  color: #fff;
+  &__title {
+    color: #fff;
+  }
+}
+
+a{
+	transition: none;
+}
+
+.Tree-items{
+	margin-bottom: 10px;
+}
+
+.Tree-item{
+	@include core-16;
+    line-height: 0 !important;
+}
+
+.Tree-collectionLabel{
+	@include core-16;
+	padding: 10px;
+	font-weight: bold;
+	margin-right: 15px;
+	span{
+		color: $link-colour;
+	}
+	span::before{
+		display: none;
+	}
+}
+
+
+.Tree-entityLink{
+	padding: 10px;
+	font-weight: bold;
+	margin-right: 15px;
+	line-height: 1;
+	span{
+		color: $link-colour;
+	}
+	.Status{
+		display: none;
+	}
+}
+
+.Tree-entityLink:focus,
+.Tree-entityLink:active{
+	background-color: #005ea5;
+	span{
+		color: white;
+	}
+}
+
+.is-current .Tree-entityLink::after {
+    content: "\203A";
+    position: absolute;
+    right: 26px;
+    color: white;
+    font-weight: bold;
+}
+
+.is-current .Tree-entityLink{
+	background-color: #005ea5;
+	span{
+		color: white;
+	}
+}
+
+
+.Tree-collectionItems{
+
+	margin-bottom: 10px;
+	
+	.Tree-entityLink{
+		font-weight: normal;
+		padding-left: 15px;
+	}
+} 
+
+.Tree-title{
+	margin-bottom: 15px;
+	color: $secondary-text-colour;
+	text-transform: none;
+    letter-spacing: normal;
+}
+
+.Navigation-group + .Navigation-group {
+    margin-top: 20px;
+}
+
+.Preview-handle{
+    right: 0px;
+    background-color: rgba(83, 83, 99, 0.05);
+}
+
+.Preview-resizer {
+    max-width: calc(100% - 0.625rem + 10px);
+}
+
+.Browser-tab a:focus,
+.Tree-entityLink:focus{
+    outline: none;
+}
+
+.Browser{
+    margin-bottom: 500px;
+}
+
+.Browser-tab a:focus{
+    background-color: rgba(83, 83, 99, 0.05);
+}
+
+.Browser-tab a{
+    @include core-16();
+    color: $text-colour;
+}
+.Browser-tab a:hover{
+    border-bottom: 3px solid $border-colour;
+}
+.Browser-tab.is-active a{
+    color: $text-colour;
+    background-color: rgba(83, 83, 99, 0.05);
+    border-bottom: 3px solid #005ea5;
+}
+
+.Browser-panel{
+	padding: 30px 0;
+}
+
+.Browser-notes,
+.Browser-panel,
+.Browser-panel .Code,
+.Browser-panel .Code pre{
+	background-color: white;	
+}
+
+.Frame-panel--sidebar{
+	background-color: white;
+	-webkit-border-end: none;
+    width: 25%;
+    padding: 30px 0;
+    border-right: 1px solid $border-colour;
+    margin: 0 15px;
+}
+
+.Pen-info{
+	border: 0px solid $border-colour;	
+}
+
+.Pen-header{
+    max-height: none;
+    padding: 10px 0.75rem 20px;
+}
+
+.Preview{
+	border: 1px solid $border-colour;
+}
+
+
+.Pen-title{
+  	@include bold-36();
+	color: $text-colour;
+	margin-top: 20px;
+}
+
+.Pen-previewLink:link,
+.Pen-previewLink:visited,
+.Pen-previewLink:hover,
+.Pen-previewLink:active {
+	color: $text-colour;
+}
+
+// Remove dahsboard-style
+.Pen{
+	height: auto;
+}
+
+.Pen-panel{
+    margin-right: 20px;
+}
+
+.Browser{	
+    position: initial;
+}
+
+.Meta,
+.Prose{
+	@include core-19;
+	color: $text-colour;
+}
+
+.Meta{
+	@include core-16;
+	a{
+		text-decoration: underline;
+	}
+}
+
+.Prose {
+	font-family: "nta", Arial, sans-serif;
+	max-width: 36em;
+	h1{
+    	@include bold-27();
+	}
+	h2{
+    	@include bold-24();
+	}
+	h1, h2, h3, h4, h5, h6 {
+	    color: $text-colour;
+	    opacity: 1;
+	}
+
+	ul > li {
+    	list-style-type: disc;
+	}
+}
+
+
+.Document-title{
+  @include bold-36();
+
+  margin-top: em(25, 24);
+  margin-bottom: em(10, 24);
+
+  @include media(tablet) {
+    margin-top: em(45, 36);
+    margin-bottom: em(20, 36);
+  }
+}
+
+
+.Status-label {
+	@include core-16;
+    letter-spacing: normal;
+    border-radius: 0;
+    padding: 0.125rem 0.75rem;
+    color: white;
+}

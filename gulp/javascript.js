@@ -1,14 +1,14 @@
-'use strict';
+'use strict'
 
 const gulp = require('gulp')
+const concat = require('gulp-concat')
 const config = require('./config.json')
 
-// -----------------------------------------------------------------------------
-// JavaScript Tasks
-// -----------------------------------------------------------------------------
-
 gulp.task('scripts', function() {
-  return gulp.src([paths.src.components + '/**/*.js'])
+  return gulp.src([
+    config.paths.assets + '/javascripts/**/*.js',
+    config.paths.fractal.components + '/**/*.js'
+  ])
   .pipe(concat('scripts.js'))
-  .pipe(gulp.dest(paths.dist.javascript));
+  .pipe(gulp.dest(config.paths.public + '/javascripts/'));
 });

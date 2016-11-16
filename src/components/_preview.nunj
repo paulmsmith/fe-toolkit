@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     {# <link media="all" rel="stylesheet" href="{{ path '/example.css' }}"> #}
     <title>{{ _target.label }} | My Component Library</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" media="screen">
 </head>
 <body>
 
