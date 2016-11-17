@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// fractal theme bespoke styles for bespoke HTML within the interface
+// -----------------------------------------------------------------------------
+
+.ftheme-c-global-header {
+  
+  background: #000;
+  padding: 20px;
+  color: #fff;
+  border-bottom: 10px solid $department-colour;
+  
+  &__logo,
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  &__logo + &__title {
+    margin-left: 20px;
+  }
+  
+  &__title {
+    color: inherit;
+  }
+  
+}

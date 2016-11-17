@@ -27,7 +27,7 @@ gulp.task('css', function() {
       gutil.log(error.message);
       this.emit('end');
   }))
-  .pipe(sassGlob())
+  // .pipe(sassGlob())
   .pipe(sass({
     outputStyle: 'expanded',
     includePaths: [

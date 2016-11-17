@@ -16,7 +16,7 @@ gulp.task('watch-assets', function () {
 gulp.task('watchCSS', function() {
   return gulp.watch([
     config.paths.assets + 'sass/**',
-    config.paths.fractal.sass + '/**'
+    config.paths.fractal.sass + '/**/*'
   ], {cwd: './'}, ['css'])
 });
 
