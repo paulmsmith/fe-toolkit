@@ -8,15 +8,15 @@ To form part of the DWP Design System. A trial for the DWP Frontend Toolkit usin
 
 - [X] Scaffold app structure
 - [X] Update fractal configuration + theme
+- [X] Write gulp tasks (Fractal CLI, linting, building, compressing assets, ..etc)
+- [X] Integrate existing gov.uk frontend resources
 - [ ] Write documentation (Introduction/Overview, how-to, principles, code standards..) **[Started this]**
-- [ ] Integrate existing gov.uk frontend resources
-- [ ] Write gulp tasks (Fractal CLI, linting, building, compressing assets, ..etc)
 
 [See more in the project 'build'](https://github.com/paulmsmith/fe-toolkit/projects/2)
 
 ## Process
 
-Service hypothesises solution to problem -> develops -> tests -> refines -> proves -> publishes.
+Service hypothesises solution to problem `-> develops -> tests -> refines -> proves -> publishes`.
 Solution is used and is identified or proposed as a ‘Pattern’. 
 
 Pattern is reviewed, tested and built in the best way possible:
