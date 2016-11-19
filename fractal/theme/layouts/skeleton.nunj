@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="lte-ie8" lang="{{ html_lang|default('en') }}"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
+<html lang="{{ frctl.theme.get('lang') | default('en') }}" dir="{{ 'rtl' if frctl.theme.get('rtl') else 'ltr' }}" class="no-js">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
     window.frctl = {
         env: '{% if frctl.env.server %}server{% else %}static{% endif %}'
     };
     </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    {% include 'partials/stylesheets.nunj' %}
-    
-    <link href="{{ path('/stylesheets/fonts.css') }}" media="screen" rel="stylesheet" />
-    <link href="{{ path('/stylesheets/application.css') }}" media="screen" rel="stylesheet" />
-
-	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ frctl.get('project.title') }}</title>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    {% include 'partials/head.nunj' %}
 </head>
-
 <body>
 
 {% block page %}{% endblock %}
 
 {% include 'partials/foot.nunj' %}
+
 </body>
 </html>
