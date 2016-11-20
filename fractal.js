@@ -9,6 +9,8 @@ const mandelbrot = require('@frctl/mandelbrot');
 /* include nunjucks filters from external file */
 const nunjfilters = require(__dirname + '/fractal/lib/filters')();
 
+console.log(nunjfilters);
+
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
     globals: {
@@ -19,13 +21,27 @@ const nunj = require('@frctl/nunjucks')(Object.assign({
     }
 }, nunjfilters));
 
-/* create a new instance with custom config options */
+/* create a new instance with custom config options 
+see: http://fractal.build/guide/web/default-theme#configuration - */
 const themeconfig = mandelbrot({
-    // skin: "black",
-    // nav: ["docs", "components"]
     "skin": "black",
-    "nav": ["docs", "components"],
-    "panels": ["notes", "html", "view", "context", "resources", "info"],
+    styles: [
+      'default',                            // default fractal styles
+      '/stylesheets/fonts.css',             // govuk fonts.css
+      '/stylesheets/fractal_theme_dwp.css'  // dwp fractal theme overrides
+    ],
+    "nav": [
+      "docs",
+      "components"
+    ],
+    "panels": [
+      "notes",
+      "html",
+      "view",
+      "context",
+      "resources",
+      "info"
+    ],
     "static": {
         "mount": "theme"
     }
@@ -35,7 +51,7 @@ const themeconfig = mandelbrot({
 ----------------------------------------------------------------------------- */
 
 /* Set the title of the project */
-fractal.set('project.title', 'DWP Frontend Toolkit');
+fractal.set('project.title', 'DWP Design Patterns');
 fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Paul Smith');
 

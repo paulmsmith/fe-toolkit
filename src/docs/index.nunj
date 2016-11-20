@@ -1,12 +1,11 @@
-<img src="/images/dwp_fe_poster.jpg" alt="" />
-
-* [Introduction](#introduction)
-* [Getting started](#get-started)
+---
+context:
+  banner:
+    url: "/images/dwp_fe_poster.jpg"
+---
 
 <h2 id="introduction">Introduction</h2>
 
-Lead by the DWP User Experience team, DWP Frontend is an integral part a wider 'Design System' which is continuously developed.
-
-Itself a living service, the mission of this project is to provide 'production ready' code and documentation which is easy to use or 'consume' for software developers and service teams.
+<p>Lead by the team within DWP Digital's 'User Experience' direcorate, this pattern library is to be considered the 'single source of truth' for anybody working in the department to develop services for citizens and civil servants.</p>
 
 <h2 id="get-started">Getting started</h2>

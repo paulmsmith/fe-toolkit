@@ -1,7 +1,20 @@
+{% import "macros/bespoke.nunj" as bespoke %}
+
 <div class="Header">
-    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        {% include 'icons/close-nav.svg' %}
-        {% include 'icons/open-nav.svg' %}
-    </button>
-    <a href="{{ path('/') }}" class="Header-title" data-pjax>{{ frctl.get('project.title') | default('Component Library') }}</a>
+    <div class="Header-brand">
+      <div class="Header-brand__logo">
+        {{ bespoke.logo() }}
+      </div>
+      <div class="Header-brand__title">
+        <a href="{{ path('/') }}" class="Header-title" data-pjax>
+          {{ frctl.get('project.title') | default('Component Library') }}
+        </a>
+      </div>
+    </div>
+    <div class="Header-menu">
+      <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+          {% include 'icons/close-nav.svg' %}
+          {% include 'icons/open-nav.svg' %}
+      </button>
+    </div>
 </div>

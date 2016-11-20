@@ -2,4 +2,9 @@
 // fractal theme settings
 // -----------------------------------------------------------------------------
 
-$department-colour: $department-for-work-pensions;
+$colour-brand-department: $department-for-work-pensions;
+$colour-brand-department--dark: darken($colour-brand-department,10);
+$colour-brand-department--light: #50b4ad;
+
+$colour-link-default: $colour-brand-department--dark;
+$colour-link-hover: $colour-brand-department--light;

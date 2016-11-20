@@ -1,14 +1,83 @@
 // // Chock full of hacks and overwrites of the default 'mandlebrot' theme
 // // If we use Fractal for real we'll need to build this theme up from scratch
-// 
-// body, h1 {
-//   font-family: 'nta';
-// }
-// 
-// a{
-// 	transition: none;
-// }
-// 
+
+body, h1 {
+  font-family: 'nta';
+}
+
+a {	
+  transition: none;
+  color: $colour-link-default;
+  &:hover {
+    color: $colour-link-hover;
+  }
+}
+
+.Header {
+  display: block;
+  padding: 15px;
+  border-bottom: 10px solid $colour-brand-department;
+  box-shadow: none;
+  letter-spacing: -0.32em;
+  [dir="ltr"] &-button {
+    border-right: 0;
+  }
+  &-button {
+    width: auto;
+    height: auto;
+    display: inline-block;
+  }
+  &-title {
+    font-size: 23px;
+    font-family: 'nta'!important;
+    font-weight: bold;
+    display: inline-block;
+  }
+  &-brand,
+  &-menu {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: normal;
+  }
+  &-brand {
+    &__title,
+    &__logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &-menu {
+    text-align: right;
+  }
+}
+
+.Navigation,
+.Navigation *,
+.Tree,
+.Tree *,
+.Tree-item {
+  font-family: 'nta'!important;
+  letter-spacing: normal;
+  font-size: 1em;
+}
+
+.Frame-panel--sidebar {
+  width: 320px;
+  min-width: 320px;
+  background: transparent;
+}
+
+.Tree {
+  &-title {
+    font-size: 20px;
+    text-transform: none;
+  }
+  > .Tree-items {
+    padding: 0 1em;
+  }
+}
+
 // .Tree-items{
 // 	margin-bottom: 10px;
 // }
@@ -119,7 +188,7 @@
 // .Browser-tab.is-active a{
 //     color: $text-colour;
 //     background-color: rgba(83, 83, 99, 0.05);
-//     border-bottom: 3px solid $department-colour;
+//     border-bottom: 3px solid $colour-brand-department;
 // }
 // 
 // .Browser-panel{
@@ -192,47 +261,61 @@
 // 	}
 // }
 // 
-// .Prose {
-// 	
-//   font-family: "nta", Arial, sans-serif;
-// 	max-width: 50em;
-// 	
-//   h1{
-//     	@include bold-27();
-// 	}
-// 	
-//   h2{
-//     	@include bold-24();
-// 	}
-//   
-// 	h1, h2, h3, h4, h5, h6 {
-// 	    color: $text-colour;
-// 	    opacity: 1;
-//       margin: 0 0 20px 0;
-// 	}
-// 
-// 	ul > li {
-//     	list-style-type: disc;
-// 	}
-//   
-//   img {
-//     max-width: 100%;
-//   }
-//   
-// }
-// 
-// 
-// .Document-title{
-// 
-//   margin-top: em(25, 24);
-//   margin-bottom: em(10, 24);
-// 
-//   @include media(tablet) {
-//     margin-top: em(45, 36);
-//     margin-bottom: em(20, 36);
-//   }
-//   
-// }
+.Prose {
+	
+  font-family: "nta", Arial, sans-serif;
+
+	max-width: 52em;
+	
+  h1{
+    font-size: 27px;
+	}
+	
+  h2{
+    font-size: 24px;
+	}
+  
+	h1, h2, h3, h4, h5, h6, p, ul, li {
+    font-family: "nta", Arial, sans-serif;
+    color: $text-colour;
+    opacity: 1;
+    margin: 0 0 1em 0;
+	}
+  
+  p, li {
+    font-size: 1.3em;
+    color: #333;
+  }
+
+	ul > li {
+    	list-style-type: disc;
+      margin-bottom: 0.5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+	}
+  
+  img {
+    max-width: 100%;
+  }
+  
+  *:not(hr) + h2 {
+    margin-top: 1em;
+  }
+  
+}
+
+
+.Document-title{
+  font-family: 'nta';
+  font-size: 28px;
+  letter-spacing: normal;
+  color: $text-colour;
+  @include media(tablet) {
+    font-size: 34px;
+  }
+}
+
 // 
 // 
 // .Status-label {
