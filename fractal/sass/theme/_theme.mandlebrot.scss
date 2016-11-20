@@ -94,8 +94,8 @@ a {
 }
 
 .Frame-panel--sidebar {
-  width: 320px;
-  min-width: 320px;
+  width: 280px;
+  min-width: 280px;
   background: transparent;
 }
 
@@ -305,6 +305,10 @@ a {
   h2{
     font-size: 24px;
 	}
+  
+  h3 {
+    font-size: 20px;
+  }
   
 	h1, h2, h3, h4, h5, h6, p, ul, li {
     font-family: "nta", Arial, sans-serif;
