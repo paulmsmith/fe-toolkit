@@ -1,13 +1,15 @@
-{% import "macros/bespoke.nunj" as bespoke %}
+{% import "macros/bespoke.nunj" as fracTheme %}
 
 <div class="Header">
     <div class="Header-brand">
       <div class="Header-brand__logo">
-        {{ bespoke.logo() }}
+        {{ fracTheme.logo({ width: '45px', height: '45px' }) }}
       </div>
       <div class="Header-brand__title">
         <a href="{{ path('/') }}" class="Header-title" data-pjax>
-          {{ frctl.get('project.title') | default('Component Library') }}
+          <span class="Header-title__department"><strong>{{ frctl.get('project.department') | default('DWP') }}</strong></span>
+          <span class="Header-title__title">{{ frctl.get('project.title') | default('Component Library') }}</span>
+          {# {% if frctl.get('project.phase') %}<span class="Header-title__phase">{{ frctl.get('project.phase') }}</span>{% endif %} #}
         </a>
       </div>
     </div>

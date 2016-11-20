@@ -51,7 +51,9 @@ const themeconfig = mandelbrot({
 ----------------------------------------------------------------------------- */
 
 /* Set the title of the project */
-fractal.set('project.title', 'DWP Design Patterns');
+fractal.set('project.department', 'DWP');
+fractal.set('project.title', 'Design System');
+fractal.set('project.phase', 'Alpha');
 fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Paul Smith');
 

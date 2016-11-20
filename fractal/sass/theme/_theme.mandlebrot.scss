@@ -1,5 +1,7 @@
-// // Chock full of hacks and overwrites of the default 'mandlebrot' theme
-// // If we use Fractal for real we'll need to build this theme up from scratch
+// this is a hacked/modified version of Fractal mandlebrot, should we adopt
+// fractal longer term, we'd want to tidy or possible write our own custom
+// theme that meets GDS and DWP Principles completely. This is currently a
+// proof of concept. 
 
 body, h1 {
   font-family: 'nta';
@@ -28,26 +30,55 @@ a {
     display: inline-block;
   }
   &-title {
-    font-size: 23px;
+    padding: 0;
+    font-size: 22px;
     font-family: 'nta'!important;
-    font-weight: bold;
     display: inline-block;
+    &__title,
+    &__phase {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__title + &__phase {
+      [dir="ltr"] & {
+        margin-left: 10px;
+      }
+    }
+    &__phase {
+      line-height: 1.4;
+      background: $alpha-colour;
+      padding: 0 5px;
+      font-size: 1rem;
+      // display: none;
+    }
   }
   &-brand,
   &-menu {
-    width: 50%;
     display: inline-block;
     vertical-align: middle;
     letter-spacing: normal;
   }
   &-brand {
+    width: 70%;
     &__title,
     &__logo {
       display: inline-block;
       vertical-align: middle;
     }
+    &__logo + &__title {
+      [dir="ltr"] & {
+        margin-left: 0.75rem;
+      }
+    }
+    &__logo {
+      width: 40px;
+      svg {
+        width: 100%;
+      }
+    }
   }
   &-menu {
+    width: 30%;
     text-align: right;
   }
 }
