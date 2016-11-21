@@ -4,14 +4,14 @@ title: 'About the DWP Design System'
 
 <p>Departments such as DWP, HMRC and others aim to follow <a href="https://www.gov.uk/design-principles">the design principles</a> as described by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a> (GDS). However each department has their own distinct challenges in how they organise themselves to deliver the best possible services to citizens.</p>
 
-<p>The DWP Design System is in effect, an extention of a greater GOV.UK design system which is centrally maintained by GDS.</p>
+<p>The DWP Design System is an extention of a greater GOV.UK design system which is centrally maintained by GDS.</p>
 
 <p class="text-align--center"><img src="/images/content/gds_orbit.jpg" alt="" /></p>
 
 <p> We are working collaboratively with GDS to ensure the same high standard of research, design and execution. We should be doing so in a way which means the wider government can benefit from our work as it is highly likely to be addessing cross-government problems.</p>
 
-<h2 id="understandable-outputs">Design system mission</h2>
+<p>The design system is a service itself because we believe it is important that when providing design assets, we should do so in a format that is trusted, current and easily understood by those using them.</p>
 
-<p>The design system is a living service itself because it's important that when providing design assets, we should do so in a format that is trusted, current and easily understood by those using them.</p>
+<h2 id="understandable-outputs">Design system mission</h2>
 
 <p>The aim of the design system is to be a 'single source of truth' for anybody developing services.</p>
