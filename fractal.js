@@ -7,7 +7,9 @@ const fractal = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 /* include nunjucks filters from external file */
-const nunjfilters = require(__dirname + '/lib/filters')();
+const nunjfilters = require(__dirname + '/fractal/lib/filters')();
+
+console.log(nunjfilters);
 
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
@@ -19,17 +21,39 @@ const nunj = require('@frctl/nunjucks')(Object.assign({
     }
 }, nunjfilters));
 
-/* create a new instance with custom config options */
+/* create a new instance with custom config options 
+see: http://fractal.build/guide/web/default-theme#configuration - */
 const themeconfig = mandelbrot({
-    skin: "black",
-    nav: ["docs", "components"]
+    "skin": "black",
+    styles: [
+      'default',                            // default fractal styles
+      '/stylesheets/fonts.css',             // govuk fonts.css
+      '/stylesheets/fractal_theme_dwp.css'  // dwp fractal theme overrides
+    ],
+    "nav": [
+      "docs",
+      "components"
+    ],
+    "panels": [
+      "notes",
+      "html",
+      "view",
+      "context",
+      "resources",
+      "info"
+    ],
+    "static": {
+        "mount": "theme"
+    }
 });
 
 /* project meta data
 ----------------------------------------------------------------------------- */
 
 /* Set the title of the project */
-fractal.set('project.title', 'DWP Frontend Toolkit');
+fractal.set('project.department', 'DWP');
+fractal.set('project.title', 'Design System');
+fractal.set('project.phase', 'Alpha');
 fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Paul Smith');
 
@@ -63,7 +87,7 @@ fractal.docs.set('path', __dirname + '/src/docs');
 ----------------------------------------------------------------------------- */
 
 // specify a directory to hold the theme override templates
-themeconfig.addLoadPath(__dirname + '/theme_overrides');
+themeconfig.addLoadPath(__dirname + '/fractal/theme');
 
 /* tell fractal to use the configured theme by default */
 fractal.web.theme(themeconfig);
