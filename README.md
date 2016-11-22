@@ -1,8 +1,8 @@
-# DWP Frontend toolkit
+# DWP Design System
 
-![POSTER FOR TOOLKIT](https://github.com/paulmsmith/fe-toolkit/blob/master/public/images/docs/dwp_fe_poster.jpg?raw=true)
+The DWP Design system is a collection of design patterns, components, and guidelines to ensure the creation of unified services for citizens and civil servants.
 
-To form part of the DWP Design System. A trial for the DWP Frontend Toolkit using [Fractal](http://fractal.build). I'm getting this to a place where people can contribute, push back, improve.
+This repository contains the code and assets for a trial of [Fractal](http://fractal.build).
 
 ## To do:
 
@@ -12,11 +12,12 @@ To form part of the DWP Design System. A trial for the DWP Frontend Toolkit usin
 - [X] Integrate existing gov.uk frontend resources
 - [ ] Write documentation (Introduction/Overview, how-to, principles, code standards..) **[Started this]**
 
-[See more in the project 'build'](https://github.com/paulmsmith/fe-toolkit/projects/2)
+[See more in the project 'build'](https://github.com/paulmsmith/dwp-design/projects/2)
 
 ## Process
 
-Service hypothesises solution to problem `-> develops -> tests -> refines -> proves -> publishes`.
+`hypothesis -> develop -> test -> refine -> "prove" -> publish`
+
 Solution is used and is identified or proposed as a ‘Pattern’. 
 
 Pattern is reviewed, tested and built in the best way possible:
@@ -26,9 +27,9 @@ Pattern is reviewed, tested and built in the best way possible:
 3. Maintainable.
 4. Reusable.
 
-## Purpose of the DWP Front-end Toolkit:
+## Purpose of the DWP Design System:
 
-* Single place for DWP Teams to find ‘Production Ready’ HTML + CSS + Javascript for Citizen facing and internal services. **Stop teams using bootstrap!**
+* Single place for DWP Teams to find ‘Production Ready’ HTML + CSS + Javascript for Citizen facing and internal services. **Make the right thing to do, the easy thing to do.** *No more bootstrap*
 
 * Documentation for how teams should write, test and maintain HTML + CSS + Javascript for the DWP. Get teams doing things consistently to a high standard.
 
@@ -36,13 +37,10 @@ Pattern is reviewed, tested and built in the best way possible:
 
 ## Our users:
 
-### Developers (internal and external)
-
+- Product Owners
+- Content Designers
 - Front-end developers
-- 'Full stack developers' & Backend developers
-
-### Designers (internal & external)
-
+- Software Engineers ('Full stack developers', Backend developers)
 - Interaction Designers
 
 ## What we’re not doing:
@@ -52,4 +50,4 @@ Pattern is reviewed, tested and built in the best way possible:
 
 ## Questions / Feedback
 
-Any questions or feedback, please raise an issue within this repository. When it's ready it will be moved to the organisation respository for wider contribution. I'm merely getting this up and running in my spare time because I believe it's important. I will 'show the thing' at a future UX or Frontend meeting.
+Any questions or feedback, please raise an issue within this repository. When it's ready it will be moved to the organisation repository for wider contribution. I'm merely getting this up and running in my spare time because I believe it's important. I will 'show the thing' at a future UX or Frontend meeting.
