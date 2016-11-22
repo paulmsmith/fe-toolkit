@@ -26,11 +26,6 @@ gulp.task('frctlStart:development', function(){
   runFractalServer({ sync: true })
 });
 
-// starts the development server on your local machine
-gulp.task('frctlStart', function(){
-  runFractalServer({ sync: false })
-});
-
 // builds a static version of the fractal instance
 gulp.task('frctlBuild', function () {
   const builder = fractal.web.builder();

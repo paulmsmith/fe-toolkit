@@ -51,6 +51,6 @@ gulp.task('dev', function(done) {
 
 gulp.task('default', function(done) {
   runSequence(
-    'fractal:server'
+    'dev'
   )  
 })
