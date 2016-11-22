@@ -75,6 +75,9 @@ a {
       }
     }
     &__logo {
+      @include media('mobile') {
+        display: none;
+      }
       width: 40px;
       svg {
         width: 100%;

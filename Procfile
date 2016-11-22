@@ -1,1 +1,1 @@
-web: node ./node_modules/gulp/bin/gulp default
+web: node ./node_modules/gulp/bin/gulp generate-assets && node ./node_modules/@frctl/fractal/bin/fractal start --p process.env.NODE_ENV
