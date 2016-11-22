@@ -22,12 +22,12 @@ function runFractalServer(config) {
 }
 
 // starts the development server on your local machine
-gulp.task('frctlStart', function(){
+gulp.task('frctlStart:development', function(){
   runFractalServer({ sync: true })
 });
 
 // starts the development server on your local machine
-gulp.task('frctlStart:production', function(){
+gulp.task('frctlStart', function(){
   runFractalServer({ sync: false })
 });
 

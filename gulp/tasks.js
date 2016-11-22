@@ -43,7 +43,8 @@ gulp.task('fractal:server', function(done){
 
 gulp.task('dev', function(done) {
   runSequence(
-    'fractal:server',
+    'generate-assets',
+    'frctlStart:development',
     'watch'
   )  
 })
