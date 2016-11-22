@@ -11,15 +11,24 @@ const logger = fractal.cli.console;
 // fractal tasks
 // -----------------------------------------------------------------------------
 
-// starts the development server on your local machine
-gulp.task('frctlStart', function(){
+function runFractalServer(config) {
   const server = fractal.web.server({
-    sync: true
+    sync: config.sync
   });
   server.on('error', err => logger.error(err.message));
   return server.start().then(() => {
     logger.success(`Fractal server is now running at ${server.url}`);
   });
+}
+
+// starts the development server on your local machine
+gulp.task('frctlStart', function(){
+  runFractalServer({ sync: true })
+});
+
+// starts the development server on your local machine
+gulp.task('frctlStart:production', function(){
+  runFractalServer({ sync: false })
 });
 
 // builds a static version of the fractal instance

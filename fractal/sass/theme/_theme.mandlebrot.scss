@@ -1,7 +1,7 @@
 // this is a hacked/modified version of Fractal mandlebrot, should we adopt
 // fractal longer term, we'd want to tidy or possible write our own custom
 // theme that meets GDS and DWP Principles completely. This is currently a
-// proof of concept. 
+// proof of concept.
 
 body, h1 {
   font-family: 'nta';
@@ -25,9 +25,13 @@ a {
     border-right: 0;
   }
   &-button {
-    width: auto;
-    height: auto;
+    width: 30px;
+    height: 30px;
     display: inline-block;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
   &-title {
     padding: 0;
@@ -109,189 +113,6 @@ a {
   }
 }
 
-// .Tree-items{
-// 	margin-bottom: 10px;
-// }
-// 
-// .Tree-item{
-//   line-height: 0 !important;
-// }
-// 
-// .Tree-collectionLabel{
-// 	padding: 10px;
-// 	font-weight: bold;
-// 	margin-right: 15px;
-// 	span{
-// 		color: $link-colour;
-// 	}
-// 	span::before{
-// 		display: none;
-// 	}
-// }
-// 
-// 
-// .Tree-entityLink{
-// 	padding: 10px;
-// 	font-weight: bold;
-// 	margin-right: 15px;
-// 	line-height: 1;
-// 	span{
-// 		color: $link-colour;
-// 	}
-// 	.Status{
-// 		display: none;
-// 	}
-// }
-// 
-// .Tree-entityLink:focus,
-// .Tree-entityLink:active{
-// 	background-color: #005ea5;
-// 	span{
-// 		color: white;
-// 	}
-// }
-// 
-// .is-current .Tree-entityLink::after {
-//     content: "\203A";
-//     position: absolute;
-//     right: 26px;
-//     color: white;
-//     font-weight: bold;
-// }
-// 
-// .is-current .Tree-entityLink{
-// 	background-color: #005ea5;
-// 	span{
-// 		color: white;
-// 	}
-// }
-// 
-// 
-// .Tree-collectionItems{
-// 
-// 	margin-bottom: 10px;
-// 	
-// 	.Tree-entityLink{
-// 		font-weight: normal;
-// 		padding-left: 15px;
-// 	}
-// } 
-// 
-// .Tree-title{
-// 	margin-bottom: 15px;
-// 	color: $secondary-text-colour;
-// 	text-transform: none;
-//     letter-spacing: normal;
-// }
-// 
-// .Navigation-group + .Navigation-group {
-//     margin-top: 20px;
-// }
-// 
-// .Preview-handle{
-//     right: 0px;
-//     background-color: rgba(83, 83, 99, 0.05);
-// }
-// 
-// .Preview-resizer {
-//     max-width: calc(100% - 0.625rem + 10px);
-// }
-// 
-// .Browser-tab a:focus,
-// .Tree-entityLink:focus{
-//     outline: none;
-// }
-// 
-// .Browser{
-//     margin-bottom: 500px;
-// }
-// 
-// .Browser-tab a:focus{
-//     background-color: rgba(83, 83, 99, 0.05);
-// }
-// 
-// .Browser-tab a{
-//     color: $text-colour;
-// }
-// .Browser-tab a:hover{
-//     border-bottom: 3px solid $border-colour;
-// }
-// .Browser-tab.is-active a{
-//     color: $text-colour;
-//     background-color: rgba(83, 83, 99, 0.05);
-//     border-bottom: 3px solid $colour-brand-department;
-// }
-// 
-// .Browser-panel{
-// 	padding: 30px 0;
-// }
-// 
-// .Browser-notes,
-// .Browser-panel,
-// .Browser-panel .Code,
-// .Browser-panel .Code pre{
-// 	background-color: white;	
-// }
-// 
-// .Frame-panel--sidebar{
-// 	background-color: white;
-// 	-webkit-border-end: none;
-//     // width: 20%;
-//     padding: 30px 0;
-//     border-right: 1px solid $border-colour;
-//     margin: 0 15px;
-// }
-// 
-// .Pen-info{
-// 	border: 0px solid $border-colour;	
-// }
-// 
-// .Pen-header{
-//     max-height: none;
-//     padding: 10px 0.75rem 20px;
-// }
-// 
-// .Preview{
-// 	border: 1px solid $border-colour;
-// }
-// 
-// 
-// .Pen-title{
-// 	color: $text-colour;
-// 	margin-top: 20px;
-// }
-// 
-// .Pen-previewLink:link,
-// .Pen-previewLink:visited,
-// .Pen-previewLink:hover,
-// .Pen-previewLink:active {
-// 	color: $text-colour;
-// }
-// 
-// // Remove dahsboard-style
-// .Pen{
-// 	height: auto;
-// }
-// 
-// .Pen-panel{
-//     margin-right: 20px;
-// }
-// 
-// .Browser{	
-//     position: initial;
-// }
-// 
-// .Meta,
-// .Prose{
-// 	color: $text-colour;
-// }
-// 
-// .Meta{
-// 	a{
-// 		text-decoration: underline;
-// 	}
-// }
-// 
 .Prose {
 	
   font-family: "nta", Arial, sans-serif;
@@ -340,7 +161,6 @@ a {
   
 }
 
-
 .Document-title{
   font-family: 'nta';
   font-size: 28px;
@@ -351,11 +171,27 @@ a {
   }
 }
 
-// 
-// 
-// .Status-label {
-//     letter-spacing: normal;
-//     border-radius: 0;
-//     padding: 0.125rem 0.75rem;
-//     color: white;
-// }
+.Browser {
+  &-tab {
+    a {
+      font-size: 20px;
+      font-family: 'nta';
+    }
+    svg {
+      top: -0.15em;
+    }
+    &.is-active {
+      a {
+        border-bottom: 4px solid $colour-brand-department--dark;
+      }
+    }
+  }
+}
+
+.Pen {
+  &-previewLink {
+    svg  {
+      fill: $colour-brand-department--dark;
+    }
+  }
+}
