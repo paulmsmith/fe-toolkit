@@ -11,4 +11,4 @@ gulp.task('scripts', function() {
   ])
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest(config.paths.public + '/javascripts/'));
-});
+})

@@ -9,8 +9,6 @@ const mandelbrot = require('@frctl/mandelbrot');
 /* include nunjucks filters from external file */
 const nunjfilters = require(__dirname + '/fractal/lib/filters')();
 
-console.log(nunjfilters);
-
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
     globals: {
