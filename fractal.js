@@ -75,7 +75,7 @@ fractal.components.set('default.preview', '@preview')
 fractal.docs.engine(nunj)
 
 // docs to look for files with a .nunj file extension
-fractal.docs.set('ext', '.nunj')
+fractal.docs.set('ext', '.md')
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/app/docs')
