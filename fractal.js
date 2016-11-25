@@ -11,92 +11,88 @@ const nunjfilters = require(__dirname + '/fractal/lib/filters')();
 
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
-    globals: {
-        // global-name: global-val
-    },
-    extensions: {
-        // extension-name: function extensionFunc(){}
-    }
+  globals: {
+    // global-name: global-val
+  },
+  extensions: {
+    // extension-name: function extensionFunc(){}
+  }
 }, nunjfilters));
 
-/* create a new instance with custom config options 
+/* create a new instance with custom config options
 see: http://fractal.build/guide/web/default-theme#configuration - */
 const themeconfig = mandelbrot({
-    "skin": "black",
-    styles: [
-      'default',                            // default fractal styles
-      '/stylesheets/fonts.css',             // govuk fonts.css
-      '/stylesheets/fractal_theme_dwp.css'  // dwp fractal theme overrides
-    ],
-    "nav": [
-      "docs",
-      "components"
-    ],
-    "panels": [
-      "notes",
-      "html",
-      "view",
-      "context",
-      "resources",
-      "info"
-    ],
-    "static": {
-        "mount": "theme"
-    }
+  "skin": "black",
+  styles: [
+    'default', // default fractal styles
+    '/stylesheets/fonts.css', // govuk fonts.css
+    '/stylesheets/fractal_theme_dwp.css' // dwp fractal theme overrides
+  ],
+  "nav": [
+    "docs",
+    "components"
+  ],
+  "panels": [
+    "notes",
+    "html",
+    "view",
+    "context",
+    "resources",
+    "info"
+  ],
+  "static": {
+    "mount": "theme"
+  }
 });
 
 /* project meta data
 ----------------------------------------------------------------------------- */
 
-/* Set the title of the project */
-fractal.set('project.department', 'DWP');
-fractal.set('project.title', 'Design System');
-fractal.set('project.phase', 'Alpha');
-fractal.set('project.version', 'v1.0');
-fractal.set('project.author', 'Paul Smith');
+fractal.set('project.department', 'DWP')
+fractal.set('project.title', 'Design System')
+fractal.set('project.phase', 'alpha')
+fractal.set('project.version', 'v1.0')
+fractal.set('project.author', 'Paul Smith')
 
 /* fractal components
 ----------------------------------------------------------------------------- */
 
 // register the Nunjucks adapter for components
-fractal.components.engine(nunj);
+fractal.components.engine(nunj)
 
 // component look for files with a .nunj file extension
-fractal.components.set('ext', '.nunj');
+fractal.components.set('ext', '.nunj')
 
 /* Tell Fractal where the components will live */
-fractal.components.set('path', __dirname + '/src/components');
+fractal.components.set('path', __dirname + '/app/components')
 
-fractal.components.set('default.preview', '@preview');
+fractal.components.set('default.preview', '@preview')
 
 /* fractal docs
 ----------------------------------------------------------------------------- */
 
 // register the Nunjucks adapter for documentation
-fractal.docs.engine(nunj);
+fractal.docs.engine(nunj)
 
 // docs to look for files with a .nunj file extension
-fractal.docs.set('ext', '.nunj');
+fractal.docs.set('ext', '.md')
 
 /* Tell Fractal where the documentation pages will live */
-fractal.docs.set('path', __dirname + '/src/docs');
+fractal.docs.set('path', __dirname + '/app/docs')
 
 /* fractal web UI
 ----------------------------------------------------------------------------- */
 
 // specify a directory to hold the theme override templates
-themeconfig.addLoadPath(__dirname + '/fractal/theme');
+themeconfig.addLoadPath(__dirname + '/fractal/theme')
 
 /* tell fractal to use the configured theme by default */
-fractal.web.theme(themeconfig);
+fractal.web.theme(themeconfig)
 
-/* set the directory within which any static HTML exports of the web UI should 
+/* set the directory within which any static HTML exports of the web UI should
 be generated */
-fractal.web.set('builder.dest', __dirname + '/build');
+fractal.web.set('builder.dest', __dirname + '/build')
 
-/* Tell fractal to use browsersync by default */
-fractal.web.set('server.sync', true);
-
-/* serve a directory of static assets via the web UI (so that you can link to 
+/* serve a directory of static assets via the web UI (so that you can link to
 stylesheets from your preview layouts, for example) */
-fractal.web.set('static.path', __dirname + '/public');
+fractal.web.set('static.path', __dirname + '/public')
