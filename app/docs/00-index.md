@@ -12,5 +12,5 @@ context:
 <h2 id="getting-started">Getting started</h2>
 
 <ul>
-  <li>Read about the <a href="about">DWP Design System in detail</a>.</li>
+  <li>Read about the <a href="docs/about">DWP Design System in detail</a>.</li>
 </ul>
