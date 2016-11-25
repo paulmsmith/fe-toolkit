@@ -2,7 +2,24 @@
 title: 'How to contribute'
 ---
 
-<p>content here</p>
+<p>There are multiple ways to contribute, such as:</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
+<ul>
+	<li>
+		Use the existing patterns documented here and share your research about 
+		how well (or not) they worked within your service for your users.
+	</li>
+	<li>
+		You could have patterns of your own that you believe will benefit other 
+		services within DWP. If so, you can submit a pattern or research for 
+		consideration.
+	</li>
+</ul>
+
+<h2 id="install">Installing the application</h2>
+
+<p>This pattern library is powered by a customised open source 
+	software application called 'Fractal'. To be able to contribute a pattern or 
+	component directly to this library, first you will will need to install the
+	DWP instance of the Fractal application by follwing the instructions below.</p>
+	
