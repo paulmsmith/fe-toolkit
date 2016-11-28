@@ -1,4 +1,5 @@
 {
   "root": "build/",
-	"basic_auth": true
+	"basic_auth": true,
+	"basic_auth_htpasswd_path": "build/.htpasswd"
 }
