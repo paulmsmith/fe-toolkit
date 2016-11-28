@@ -36,7 +36,7 @@ gulp.task('watch', function(done){
 gulp.task('fractal:server', function(done){
   runSequence(
     'generate-assets',
-    'frctlStart',
+    'frctlstart',
     done
   )
 })
@@ -44,13 +44,21 @@ gulp.task('fractal:server', function(done){
 gulp.task('dev', function(done) {
   runSequence(
     'generate-assets',
-    'frctlStart:development',
+    'frctlstart:development',
     'watch'
-  )  
+  )
+})
+
+gulp.task('build', function(done) {
+  runSequence(
+    'generate-assets',
+    'frctlbuild',
+    'watch'
+  )
 })
 
 gulp.task('default', function(done) {
   runSequence(
     'dev'
-  )  
+  )
 })

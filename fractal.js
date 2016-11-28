@@ -7,17 +7,15 @@ const fractal = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 /* include nunjucks filters from external file */
-const nunjfilters = require(__dirname + '/fractal/lib/filters')();
+const nunjfilters = require(__dirname + '/fractal/lib/filters')(fractal);
+const nunjextensions = require(__dirname + '/fractal/lib/extensions')(fractal);
 
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
   globals: {
-    // global-name: global-val
-  },
-  extensions: {
-    // extension-name: function extensionFunc(){}
+    docs: fractal.docs
   }
-}, nunjfilters));
+}, nunjextensions, nunjfilters));
 
 /* create a new instance with custom config options
 see: http://fractal.build/guide/web/default-theme#configuration - */
@@ -68,17 +66,22 @@ fractal.components.set('path', __dirname + '/app/components')
 
 fractal.components.set('default.preview', '@preview')
 
+fractal.components.set('label', 'DWP Frontend')
+
 /* fractal docs
 ----------------------------------------------------------------------------- */
-
-// register the Nunjucks adapter for documentation
-fractal.docs.engine(nunj)
 
 // docs to look for files with a .nunj file extension
 fractal.docs.set('ext', '.md')
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/app/docs')
+
+// set the label for the documentation
+fractal.docs.set('label','DWP User Experience')
+
+// register the Nunjucks adapter for documentation
+fractal.docs.engine(nunj)
 
 /* fractal web UI
 ----------------------------------------------------------------------------- */

@@ -18,11 +18,18 @@
         </div>
 
         <div class="Frame-handle" data-role="frame-resize-handle"></div>
-        
+
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             {% include 'partials/navigation/navigation.nunj' %}
         </div>
     </div>
+
+		<div class="Frame-footer">
+			<div class="Frame-footer__inner">
+				<p>Developed in Stockport by DWP Digital User Experience. Footer content here.</p>
+			</div>
+		</div>
+
 </div>
 
 {% endblock %}

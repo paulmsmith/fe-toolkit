@@ -53,7 +53,9 @@ a {
       background: $alpha-colour;
       padding: 0 5px;
       font-size: 1rem;
-      // display: none;
+		  @include media('mobile') {
+		    display: none;
+		  }
     }
   }
   &-brand,
@@ -207,4 +209,8 @@ a {
       fill: $colour-brand-department--dark;
     }
   }
+}
+
+code, pre {
+  font-size: 1.2rem;
 }
