@@ -9,7 +9,7 @@
         <a href="{{ path('/') }}" class="Header-title" data-pjax>
           <span class="Header-title__department"><strong>{{ frctl.get('project.department') | default('DWP') }}</strong></span>
           <span class="Header-title__title">{{ frctl.get('project.title') | default('Component Library') }}</span>
-          {# {% if frctl.get('project.phase') %}<span class="Header-title__phase">{{ frctl.get('project.phase') }}</span>{% endif %} #}
+          {% if frctl.get('project.phase') %}<span class="Header-title__phase">{{ frctl.get('project.phase') }}</span>{% endif %}
         </a>
       </div>
     </div>

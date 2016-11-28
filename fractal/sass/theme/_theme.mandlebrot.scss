@@ -53,7 +53,9 @@ a {
       background: $alpha-colour;
       padding: 0 5px;
       font-size: 1rem;
-      // display: none;
+		  @include media('mobile') {
+		    display: none;
+		  }
     }
   }
   &-brand,

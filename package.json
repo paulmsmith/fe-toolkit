@@ -2,19 +2,20 @@
   "name": "dwp-patterns",
   "version": "1.0.0",
   "description": "patterns and code for service design teams within the the UK Department for Work and Pensions",
-  "main": "gulpfile.js",
+	"engines": {
+	  "node": ">=6.0 <7.0"
+	},
   "repository": {
-    "url": "https://github.com/paulmsmith/fe-toolkit.git",
+    "url": "https://github.com/paulmsmith/dwp-design.git",
     "type": "git"
   },
   "scripts": {
     "start": "node start.js"
   },
   "author": "Paul Smith <paulsmith.digitaldwp@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "@frctl/fractal": "^1.0.8",
-    "@frctl/nunjucks": "^1.0.1",
+    "@frctl/fractal": "^1.0.9",
+    "@frctl/nunjucks": "^1.0.2",
     "browser-sync": "^2.7.10",
     "cross-spawn": "^5.0.1",
     "del": "^2.2.0",

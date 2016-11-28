@@ -3,25 +3,25 @@
 // -----------------------------------------------------------------------------
 
 .ftheme-c-global-header {
-  
+
   background: #000;
   padding: 20px;
   color: #fff;
-  
+
   &__logo,
   &__title {
     display: inline-block;
     vertical-align: middle;
   }
-  
+
   &__logo + &__title {
     margin-left: 20px;
   }
-  
+
   &__title {
     color: inherit;
   }
-  
+
 }
 
 .Document-banner {
@@ -33,4 +33,15 @@
 
 .text-align--center {
   text-align: center;
+}
+
+.Frame-footer {
+	border-top: 1px solid $border-colour;
+	background: $colour-footer-background;
+	padding: 15px;
+	position: relative;
+
+  @include media('mobile') {
+    display: none;
+  }
 }
