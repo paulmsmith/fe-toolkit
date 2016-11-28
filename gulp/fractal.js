@@ -22,12 +22,12 @@ function runFractalServer(config) {
 }
 
 // starts the development server on your local machine
-gulp.task('frctlStart:development', function(){
+gulp.task('frctlstart:development', function(){
   runFractalServer({ sync: true })
 });
 
 // builds a static version of the fractal instance
-gulp.task('frctlBuild', function () {
+gulp.task('frctlbuild', function () {
   const builder = fractal.web.builder();
   builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
   builder.on('error', err => logger.error(err.message));
