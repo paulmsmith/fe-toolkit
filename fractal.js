@@ -7,11 +7,12 @@ const fractal = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 /* include nunjucks filters from external file */
-const nunjfilters = require(__dirname + '/fractal/lib/filters')(fractal);
-const nunjextensions = require(__dirname + '/fractal/lib/extensions')(fractal);
+const nunjfilters = require(__dirname + '/lib/fractal/lib/filters')(fractal);
+const nunjextensions = require(__dirname + '/lib/fractal/lib/extensions')(fractal);
 
 /* configure nunjucks adapter for fractal merging in filters from nunjfilters */
 const nunj = require('@frctl/nunjucks')(Object.assign({
+	paths: ['lib/fractal/theme'],
   globals: {
     docs: fractal.docs
   }
@@ -41,6 +42,14 @@ const themeconfig = mandelbrot({
   "static": {
     "mount": "theme"
   }
+});
+
+// init function for the theme
+themeconfig.on('init', function(env){
+	Object.keys(nunjfilters.filters).forEach(function (filterName) {
+		// add the each filter with the same name as define in the filters file
+    env.engine.filters[filterName] = nunjfilters.filters[filterName]
+  })
 });
 
 /* project meta data
@@ -87,7 +96,7 @@ fractal.docs.engine(nunj)
 ----------------------------------------------------------------------------- */
 
 // specify a directory to hold the theme override templates
-themeconfig.addLoadPath(__dirname + '/fractal/theme')
+themeconfig.addLoadPath(__dirname + '/lib/fractal/theme')
 
 /* tell fractal to use the configured theme by default */
 fractal.web.theme(themeconfig)

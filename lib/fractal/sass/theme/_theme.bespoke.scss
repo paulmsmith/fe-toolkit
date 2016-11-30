@@ -59,3 +59,31 @@
 		vertical-align: bottom;
 	}
 }
+
+.demo {
+	position: relative;
+	margin: 3em 0 1.75em;
+	&:before {
+		content: "EXAMPLE";
+		font-family: Helvetica;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $grey-2;
+		padding: 5px;
+		color: #fff;
+		font-size: 12px;
+		transform: translate(-1px,-100%);
+	}
+	img {
+		display: block;
+	}
+	&--border {
+		padding: 20px;
+		border: 1px solid $border-colour;
+	}
+	&--video {
+		width: 100%;
+	}
+}

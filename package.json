@@ -33,6 +33,7 @@
     "gulp-serve": "^1.2.0",
     "gulp-util": "^3.0.7",
     "http-proxy": "^1.13.2",
+    "lodash": "^4.17.2",
     "pngquant": "^1.0.0",
     "request-promise": "^2.0.1",
     "require-dir": "^0.3.1",

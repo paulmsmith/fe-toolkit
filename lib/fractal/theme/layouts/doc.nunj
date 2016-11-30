@@ -5,12 +5,12 @@
 <div class="Document">
 
     <div class="Document-header">
-        {% block docHeader %} 
+        {% block docHeader %}
         <h1 class="Document-title">{{ page.title }}</h1>
         {% if status %}{{ status }}{% endif %}
         {% endblock %}
     </div>
-    
+
     {% if doc.context.banner %}
     <div class="Document-banner">
       {% block docBanner %}

@@ -30,9 +30,9 @@
 {% endblock %}
 </div>
 
-{#
+
 <div class="Doc-stats">
-{{ doc.file.stat | dump }}
-</div> #}
+{{ doc.file.stat | log }}
+</div>
 
 {% endblock %}

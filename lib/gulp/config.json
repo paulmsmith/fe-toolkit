@@ -8,9 +8,9 @@
     "fractal": {
       "components" : "app/components/",
       "docs" : "app/docs/",
-      "theme" : "fractal/theme",
-      "lib" : "fractal/lib",
-      "sass": "fractal/sass"
+      "theme" : "lib/fractal/theme",
+      "lib" : "lib/fractal/lib",
+      "sass": "lib/fractal/sass"
     }
   }
 }

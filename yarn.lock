@@ -2932,6 +2932,10 @@ lodash@^4.0.0, lodash@^4.12.0, lodash@^4.14.0, lodash@^4.14.1, lodash@^4.3.0, lo
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.1.tgz#e75eaf17a34730c6491d9956f4d81f3a044f01bf"
 
+lodash@^4.17.2:
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
+
 lodash@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-1.0.2.tgz#8f57560c83b59fc270bd3d561b690043430e2551"
