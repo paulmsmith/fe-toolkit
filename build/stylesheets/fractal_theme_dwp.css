@@ -325,7 +325,8 @@ code, pre {
   top: 0;
   left: 0;
   background: #dee0e2;
-  padding: 5px;
+  padding: 0 5px;
+  line-height: 1;
   color: #333;
   font-size: 13px;
   -webkit-transform: translate(-1px, -100%);
