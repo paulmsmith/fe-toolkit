@@ -62,29 +62,36 @@
 
 .demo {
 	position: relative;
-	margin: 3em 0 1.75em;
+	margin: 2em 0 1em;
+	padding: 20px;
+	border: 1px solid $panel-colour;
+	display: inline-block;
 	&:before {
-		content: "EXAMPLE";
+		content: "Example";
 		font-family: Helvetica;
 		display: inline-block;
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: $grey-2;
+		background: $panel-colour;
 		padding: 5px;
-		color: #fff;
-		font-size: 12px;
+		color: #333;
+		font-size: 13px;
 		transform: translate(-1px,-100%);
+		letter-spacing: 0.05em;
 	}
 	img {
 		display: block;
 		max-width: 100%;
 	}
-	&--border {
-		padding: 20px;
-		border: 1px solid $border-colour;
+	&--no-border {
+		padding: 0px;
+		display: block;
 	}
 	&--video {
 		width: 100%;
+	}
+	+ hr {
+		margin-top: 1em;
 	}
 }
