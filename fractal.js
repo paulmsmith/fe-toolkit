@@ -25,7 +25,7 @@ const themeconfig = mandelbrot({
   styles: [
     'default', // default fractal styles
     '/stylesheets/fonts.css', // govuk fonts.css
-    '/stylesheets/fractal_theme_dwp.css' // dwp fractal theme overrides
+    '/stylesheets/frctl-theme.dwp.css' // dwp fractal theme overrides
   ],
   "nav": [
     "docs",

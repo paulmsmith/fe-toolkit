@@ -66,6 +66,11 @@
 	padding: 20px;
 	border: 1px solid $panel-colour;
 	display: inline-block;
+
+	video, embed, swf {
+		width: 100%;
+	}
+
 	&:before {
 		content: "Example";
 		font-family: Helvetica;
@@ -89,10 +94,28 @@
 		padding: 0px;
 		display: block;
 	}
-	&--video {
-		width: 100%;
-	}
 	+ hr {
 		margin-top: 1em;
+	}
+}
+
+// immutable width utilities for the docs
+.width {
+	@for $i from 1 through 8 {
+	    $width: percentage(1 / $i);
+	    &--1\/#{$i} {
+	        width: $width;
+	    }
+	}
+	$breakpoints: mobile, tablet, desktop;
+	@each $bp in $breakpoints {
+		@include media('#{$bp}') {
+			@for $i from 1 through 8 {
+			    $width: percentage(1 / $i);
+			    &--1\/#{$i}\@#{$bp} {
+			        width: $width;
+			    }
+			}
+		}
 	}
 }

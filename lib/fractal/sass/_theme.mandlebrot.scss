@@ -140,8 +140,12 @@ a {
     margin: 0 0 1em;
   }
 
-  p, li {
+  p {
     margin: 0 0 1em 0;
+  }
+
+  li {
+    margin-bottom: 0.5em;
   }
 
 	h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -149,6 +153,10 @@ a {
     color: $text-colour;
     opacity: 1;
 	}
+
+  ul, ol {
+    margin-left: 1em;
+  }
 
   p, li {
     font-size: 1.3em;
