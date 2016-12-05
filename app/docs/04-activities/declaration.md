@@ -1,5 +1,5 @@
 ---
-label: 'Declaration'
+label: 'Make a declaration'
 ---
 
 <h2 id="standard-pattern">Standard pattern</h2>
