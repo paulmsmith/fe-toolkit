@@ -11,14 +11,14 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     
 
-  <link rel="stylesheet" href="../../../theme/css/black.css?cachebust=1.0.7" type="text/css">
+  <link rel="stylesheet" href="../theme/css/black.css?cachebust=1.0.7" type="text/css">
 
-  <link rel="stylesheet" href="../../../stylesheets/fonts.css?cachebust=1.0.7" type="text/css">
+  <link rel="stylesheet" href="../stylesheets/fonts.css?cachebust=1.0.7" type="text/css">
 
-  <link rel="stylesheet" href="../../../stylesheets/fractal_theme_dwp.css?cachebust=1.0.7" type="text/css">
+  <link rel="stylesheet" href="../stylesheets/frctl-theme.dwp.css?cachebust=1.0.7" type="text/css">
 
 
-<title>Third party help | Design System</title>
+<title>How to contribute | Design System</title>
 
 </head>
 <body>
@@ -44,7 +44,7 @@
 
       </div>
       <div class="Header-brand__title">
-        <a href="../../../index.html" class="Header-title" data-pjax>
+        <a href="../index.html" class="Header-title" data-pjax>
           <span class="Header-title__department"><strong>DWP</strong></span>
           <span class="Header-title__title">Design System</span>
           <span class="Header-title__phase">alpha</span>
@@ -78,14 +78,14 @@
 <div class="Document">
 
     <div class="Document-header">
-         
-        <h1 class="Document-title">Third party help</h1>
+        
+        <h1 class="Document-title">How to contribute</h1>
         
 
 
         
     </div>
-    
+
     
 
     <div class="Document-content">
@@ -98,13 +98,79 @@
 
     
     
-    
+    <p>There are multiple ways to contribute, such as:</p>
+
+<ul>
+    <li>
+        Use the <a href="/docs/patterns">existing patterns</a> and share your research about 
+        how well (or not) they worked within your service for it’s users.
+    </li>
+    <li>
+        If you have patterns in your service which you believe will benefit others 
+        within DWP. You can <a href="/docs/about/submit">submit a pattern or research</a> for 
+        consideration.
+    </li>
+</ul>
+
+<h2 id="github-community">Github community</h2>
+
+<p>All the content and code for this pattern library is in the open on our <a href="https://github.com/paulmsmith/dwp-design">Github repository</a>.</p>
+
+<p>Within github you can ask questions (known as ‘issues’), raise defects or create ‘pull requests’ for small things such as bug fixes right the way through to new pattern documentation or components.</p>
+
+<h2 id="installation">Installing the application</h2>
+
+<p>This pattern library is powered by a customised open source software application called ‘Fractal’. To be able to contribute a pattern or component directly to this library, first you will will need to install the DWP instance of the fractal application by following the instructions below.</p>
+<h3 id="installation-requirements">Requirements</h3>
+
+<p>To install the pattern library on your computer (known as installing it ‘locally’) you will need to have administrative privileges (known as ‘admin rights’) and you should have the following dependancies already installed.</p>
+
+<ul>
+    <li>Node - Latest LTS version (currently v6.9.1) with NPM (<a href="https://nodejs.org/en/download/">Download Installer</a>)</li>
+    <li>A <a href="http://github.com">github.com</a> account</li>
+    <li>Git (<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Installing Git Instructions</a>)</li>
+    <li>Yarn (<a href="https://yarnpkg.com/en/docs/install">Installation Yarn instructions</a>)</li>
+</ul>
+
+<p>Installing these is slightly beyond the scope of this documentation as it depends on what operating system you use but if you get stuck, feel free to ask in the <a href="http://dwpdigital.slack.com">DWP Digital Slack</a>.</p>
+
+<h3 id="installation-step-1">Step 1 - Fork the repository</h3>
+
+<p>You will need to sign into your github account and then ‘fork’ the DWP-Design repository.</p>
+
+<p>Click the ‘fork’ button <img src="/images/content/about/install/fork.png" alt="" class="dib dib--vam"> at the top of the page. Once clicked you will see a loading screen and then your fork will be ready.</p>
+
+<h3 id="installation-step-2">Step 2 - Clone the code to your computer</h3>
+
+<p>In github you will now have your own copy of the code to work with. Go to that page, the URL will be similar to:</p>
+
+<p><code>http://github.com/username/dwp-design</code> </p>
+<p>Near the top of the page is a button to ‘clone or download’ <img src="/images/content/about/install/clone.png" alt="" class="dib dib--vam"> the code to your computer.</p>
+
     
 
 
 </div>
 
 
+<div class="Doc-stats">
+<script>console.log({
+	"dev": 16777220,
+	"mode": 33188,
+	"nlink": 1,
+	"uid": 501,
+	"gid": 20,
+	"rdev": 0,
+	"blksize": 4096,
+	"ino": 48818261,
+	"size": 2951,
+	"blocks": 8,
+	"atime": "2016-12-05T07:25:42.000Z",
+	"mtime": "2016-12-05T07:22:03.000Z",
+	"ctime": "2016-12-05T07:22:03.000Z",
+	"birthtime": "2016-12-05T07:22:03.000Z"
+});</script>
+</div>
 
 
 
@@ -130,9 +196,39 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-about">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="about.html" data-pjax>
+                <span>About</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Contribute</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="submit.html" data-pjax>
+                <span>Submissions</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-patterns">
             <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>About</strong></span>
+                <span><strong>Design patterns</strong></span>
             </h4>
             <ul class="Tree-collectionItems" data-role="items">
             
@@ -143,8 +239,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../about.html" data-pjax>
-                <span>Overview</span>
+            <a class="Tree-entityLink" href="patterns.html" data-pjax>
+                <span>Patterns overview</span>
                 
             </a>
         </li>
@@ -153,8 +249,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../about/contribute.html" data-pjax>
-                <span>Contribute</span>
+            <a class="Tree-entityLink" href="patterns/add-items-to-a-list.html" data-pjax>
+                <span>Add to a list</span>
                 
             </a>
         </li>
@@ -163,8 +259,58 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../about/submit.html" data-pjax>
-                <span>Submissions</span>
+            <a class="Tree-entityLink" href="patterns/alerts-and-notifications.html" data-pjax>
+                <span>Alerts &amp; notifications</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="patterns/before-your-start.html" data-pjax>
+                <span>Before you start</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="patterns/declaration.html" data-pjax>
+                <span>Declaration</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="patterns/enter-bank-details.html" data-pjax>
+                <span>Enter bank details</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="patterns/naming-a-representative.html" data-pjax>
+                <span>Naming a representative</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="patterns/third-party-help.html" data-pjax>
+                <span>Third party help</span>
                 
             </a>
         </li>
@@ -189,254 +335,10 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../elements.html" data-pjax>
+            <a class="Tree-entityLink" href="elements.html" data-pjax>
                 <span>Elements overview</span>
                 
             </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-patterns">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Design patterns</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../patterns.html" data-pjax>
-                <span>Patterns overview</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-interaction">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Interaction</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-docs-collection-staff-services">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Internal services</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="staff-services/admin-menus.html" data-pjax>
-                <span>Admin menus</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="staff-services/dash-boards.html" data-pjax>
-                <span>Dash boards</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="staff-services/listing-to-dos.html" data-pjax>
-                <span>Listing to-dos</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="staff-services/search.html" data-pjax>
-                <span>Search</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="staff-services/show-hide-filters.html" data-pjax>
-                <span>Show / hide filters</span>
-                
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="add-items-to-a-list.html" data-pjax>
-                <span>Add to a list</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="alerts-and-notifications.html" data-pjax>
-                <span>Alerts & notifications</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="before-your-start.html" data-pjax>
-                <span>Before you start</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="declaration.html" data-pjax>
-                <span>Declaration</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="enter-bank-details.html" data-pjax>
-                <span>Enter bank details</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="error-pages.html" data-pjax>
-                <span>Error pages</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="find-your-gp.html" data-pjax>
-                <span>Find your GP</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="naming-a-representative.html" data-pjax>
-                <span>Naming a representative</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="payments-from-abroad.html" data-pjax>
-                <span>Payments from abroad</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="search-for-your-address.html" data-pjax>
-                <span>Search for your address</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
-                <span>Third party help</span>
-                
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-service">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Service</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../service.html" data-pjax>
-                <span>Overview</span>
-                
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -459,7 +361,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../content.html" data-pjax>
+            <a class="Tree-entityLink" href="content.html" data-pjax>
                 <span>Overview</span>
                 
             </a>
@@ -501,7 +403,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../../components/detail/test.html" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/test.html" data-pjax>
                 <span>Test</span>
                 
             </a>
@@ -528,7 +430,7 @@
 
 		<div class="Frame-footer">
 			<div class="Frame-footer__inner">
-				<p>Developed in Stockport by DWP Digital User Experience. Footer content here.</p>
+				<p>A DWP Digital UX service.</p>
 			</div>
 		</div>
 
@@ -537,7 +439,7 @@
 
 
 
-<script src="../../../theme/js/mandelbrot.js?cachebust=1.0.7"></script>
+<script src="../theme/js/mandelbrot.js?cachebust=1.0.7"></script>
 
 
 
