@@ -10,11 +10,8 @@ context:
 
 <p>The DWP Design System is a collection of design patterns, components, and guidelines to ensure the creation of unified services for citizens and civil servants.</p>
 
-<<<<<<< HEAD
 <p>Design systems decrease the distance between research insights and product release.</p>
 
-=======
->>>>>>> 2aa7fd88d12fe57d1142bc529245bcbc99795b93
 <p>Currently in Alpha, this site is our design system's 'pattern library' and is the place for consuming documentation and code as well as contributing to them.</p><p>You can read more <a href="docs/about">about the design system in detail</a>.</p>
 
 <h2 id="who">Who</h2>
