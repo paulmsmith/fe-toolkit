@@ -87,7 +87,7 @@ fractal.docs.set('ext', '.md')
 fractal.docs.set('path', __dirname + '/app/docs')
 
 // set the label for the documentation
-fractal.docs.set('label','DWP User Experience')
+fractal.docs.set('label','Docs')
 
 // register the Nunjucks adapter for documentation
 fractal.docs.engine(nunj)
