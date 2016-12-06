@@ -1,0 +1,11 @@
+{% for item in categories %}
+<div class="swatch-wrapper">
+  <h4 class="heading-small">{{ item.name }}</h4>
+ {% for colour in item.colours %} 
+  <ul style="border-left: 60px solid {{ colour.hex }};padding-left:10px;margin-bottom:10px">
+    <li><b>{{ colour.hex }}</b></li>
+    <li>{{ colour.sass }}</li>
+  </ul>
+ {% endfor %}
+</div>
+{% endfor %}

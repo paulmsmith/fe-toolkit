@@ -1,0 +1,50 @@
+<div class="grid-row">
+  <div class="column-full">
+    {{ columnContent }}
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-one-half">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-half">
+    {{ columnContent }}
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-one-third">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-third">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-third">
+    {{ columnContent }}
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-third">
+    {{ columnContent }}
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-one-quarter">
+    {{ columnContent }} 
+  </div>
+  <div class="column-one-quarter">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-quarter">
+    {{ columnContent }}
+  </div>
+  <div class="column-one-quarter">
+    {{ columnContent }}
+  </div>
+</div>

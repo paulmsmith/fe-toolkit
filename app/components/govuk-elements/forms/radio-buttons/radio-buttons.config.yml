@@ -1,0 +1,12 @@
+title: Radio buttons
+label: Radio buttons
+context:
+  id: question
+  questionText: Where do you live?
+  options:
+  -	label: Northern Ireland
+    value: 1
+  -	label: Isle of Man or the Channel Islands
+    value: 2
+  -	label: I am a British citizen living abroad
+    value: 3

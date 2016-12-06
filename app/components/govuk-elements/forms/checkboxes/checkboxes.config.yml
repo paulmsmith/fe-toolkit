@@ -1,0 +1,10 @@
+context:
+  id: question
+  questionText: Which types of waste do you transport regularly?
+  options:
+  -	label: Waste from animal carcasses
+    value: 1
+  -	label: Waste from mines or quarries
+    value: 2
+  -	label: Farm or agricultural waste
+    value: 3

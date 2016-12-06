@@ -1,0 +1,4 @@
+<div class="form-group">
+	{% include '@form-label' %}
+	<input class="form-control" id="{{ id }}" type="text">
+</div>

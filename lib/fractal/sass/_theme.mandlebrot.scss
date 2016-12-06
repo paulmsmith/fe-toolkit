@@ -115,6 +115,7 @@ a {
   }
   > .Tree-items {
     padding: 0 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -215,7 +216,7 @@ a {
     }
     &.is-active {
       a {
-        border-bottom: 4px solid $colour-brand-department--dark;
+        border-bottom: 6px solid $colour-brand-department;
       }
     }
   }

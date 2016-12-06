@@ -59,7 +59,7 @@ fractal.set('project.department', 'DWP')
 fractal.set('project.title', 'Design System')
 fractal.set('project.phase', 'alpha')
 fractal.set('project.version', 'v1.0')
-fractal.set('project.author', 'Paul Smith')
+fractal.set('project.author', 'DWP Digital developers')
 
 /* fractal components
 ----------------------------------------------------------------------------- */

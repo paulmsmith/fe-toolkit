@@ -6,7 +6,7 @@ title: 'How to contribute'
 
 <ul>
 	<li>
-		Use the <a href="/docs/patterns">existing patterns</a> and share your research about 
+		Use the <a href="/docs/design-patterns">existing patterns</a> and share your research about 
 		how well (or not) they worked within your service for it's users.
 	</li>
 	<li>
