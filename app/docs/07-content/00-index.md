@@ -4,11 +4,13 @@ title: "Content Design"
 
 <p>Use the GOV.UK style guide as a reference for content style, spelling and grammar conventions for any service you’re working on.</p>
 
-{% for item in guide %}
-	{% if item.items.length > 0 %}
-		<h3>{{ item.label }}</h3>
-		{% for contentItem in item.items %}
-			<p>{{ contentItem.title }} - {{ contentItem.text }}</p>
+<div>
+{% for guide in guides %}
+	{% if guide.items.length > 0 %}
+		<h3>{{ guide.label }}</h3>
+		{% for item in guide.items %}
+			<p>{{ item.title }} - {{ item.text }}</p>
 		{% endfor %}
 	{% endif %}
 {% endfor %}
+</div>

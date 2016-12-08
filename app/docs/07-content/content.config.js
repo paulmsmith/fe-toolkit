@@ -1,7 +1,7 @@
 module.exports = {
   label: "Content style guide",
 	context: {
-		guide: [
+		guides: [
 			{
 				label: "a",
 				items: []
