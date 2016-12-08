@@ -21,6 +21,7 @@
 @import "font_stack";      // Font family variables
 @import "measurements";    // Widths and gutter variables
 @import "typography";      // Core bold and heading mixins, also external links
+@import "shims";
 
 // govuk elements partials
 // https://github.com/alphagov/govuk_elements/tree/master/public/sass

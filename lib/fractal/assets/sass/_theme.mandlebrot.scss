@@ -149,7 +149,7 @@ a {
     margin-bottom: 0.5em;
   }
 
-	h1, h2, h3, h4, h5, h6, p, ul, li {
+	h1, h2, h3, h4, h5, h6, p, ul, li, dt, dd {
     font-family: "nta", Arial, sans-serif;
     color: $text-colour;
     opacity: 1;
@@ -159,7 +159,7 @@ a {
     margin-left: 1em;
   }
 
-  p, li {
+  p, li, dd, dt {
     font-size: 1.3em;
     color: #333;
   }
