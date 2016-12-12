@@ -22,7 +22,7 @@
     {% if contents | isError %}
     {{ errors.renderError('page', contents.message) }}
     {% else %}
-    {{ contents }}
+    {{ contents | safe }}
     {% endif %}
 {% else %}
 {% include 'partials/content/overview.nunj' %}

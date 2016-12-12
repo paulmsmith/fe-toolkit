@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// settings
+// -----------------------------------------------------------------------------
+
+// high level settings for entirety of this fractal theme
+@import "settings";
+
+// -----------------------------------------------------------------------------
+// imports assets from govuk modules - shared attributes: fonts, colours, etc
+// Here i'm selectively choosing which partials from these for the fractal
+// theme because I don't want all of the very widely applicable css cascading
+// to the mandlebrot interface
+//
+// this will eventually be replaced by GDS's 'GOVUK Frontend' offering
+// -----------------------------------------------------------------------------
+
+// govuk frontend toolkit partials
+// https://github.com/alphagov/govuk_frontend_toolkit/tree/master/stylesheets
+
+@import "colours";         // Colour variables
+@import "font_stack";      // Font family variables
+@import "measurements";    // Widths and gutter variables
+@import "typography";      // Core bold and heading mixins, also external links
+@import "shims";
+
+// govuk elements partials
+// https://github.com/alphagov/govuk_elements/tree/master/public/sass
+@import "elements/helpers";
+
+// -----------------------------------------------------------------------------
+// Basic Fractal theme for the Department use this file to theme
+// currently just overriding aspects of 'mandlebrot' (default theme)
+// -----------------------------------------------------------------------------
+@import "theme.settings";      // theme specific settings
+@import "theme.mandlebrot";    // mandlebrot specific selectors
+@import "theme.bespoke";       // css for the bespoke UI we've added

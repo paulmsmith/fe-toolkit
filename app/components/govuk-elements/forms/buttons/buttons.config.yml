@@ -1,0 +1,13 @@
+status: ready
+context:
+  text: This is a default button
+variants:
+- name: start
+  context:
+    type: link
+    modifier: button-start
+    text: This is a start button
+- name: disabled
+  context:
+    disabled: true
+    text: This is a disabled button

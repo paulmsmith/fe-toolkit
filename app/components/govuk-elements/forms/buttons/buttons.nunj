@@ -1,0 +1,7 @@
+{% if type == "link" %}
+<a class="button {{ modifier }}{% if disabled %} disabled{% endif%}" href="{{ url }}" role="button">{{ text }}</a>
+{% else %}
+<input class="button {{ modifier }}" type="submit" value="{{ text }}"{% if disabled %} disabled="disabled"{% endif%}>
+{% endif %}
+
+

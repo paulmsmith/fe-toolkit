@@ -27,6 +27,10 @@ const themeconfig = mandelbrot({
     '/stylesheets/fonts.css', // govuk fonts.css
     '/stylesheets/frctl-theme.dwp.css' // dwp fractal theme overrides
   ],
+  "scripts": [
+      "default",
+      "/javascripts/scripts-fractal.js"
+  ],
   "nav": [
     "docs",
     "components"
@@ -59,7 +63,7 @@ fractal.set('project.department', 'DWP')
 fractal.set('project.title', 'Design System')
 fractal.set('project.phase', 'alpha')
 fractal.set('project.version', 'v1.0')
-fractal.set('project.author', 'Paul Smith')
+fractal.set('project.author', 'DWP Digital developers')
 
 /* fractal components
 ----------------------------------------------------------------------------- */

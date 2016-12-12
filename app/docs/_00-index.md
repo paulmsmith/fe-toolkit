@@ -12,7 +12,7 @@ context:
 
 <p>Design systems decrease the distance between research insights and product release.</p>
 
-<p>Currently in Alpha, this site is our design system's 'pattern library' and is the place for consuming documentation and code as well as contributing to them.</p><p>You can read more <a href="docs/about">about the design system in detail</a>.</p>
+<p>Tis our design system's 'pattern library' and is the place for consuming documentation and code as well as contributing to them.</p><p>You can read more <a href="/docs/about">about the design system in detail</a>.</p>
 
 <h2 id="who">Who</h2>
 

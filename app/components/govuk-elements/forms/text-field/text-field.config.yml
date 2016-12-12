@@ -1,0 +1,6 @@
+title: Text field
+label: Text field
+context:
+    id: textField
+    label: National Insurance number
+    hint: It'll be on your last payslip. For example, VO 12 34 56 D
