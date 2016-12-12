@@ -1,5 +1,5 @@
 module.exports = {
-  label: "Content style guide",
+  label: "Content design",
 	context: {
 		guides: [
 			{
