@@ -1,8 +1,8 @@
 ---
-label: "Content Design"
+label: "Content styleguide"
 ---
 
-<p>This guide covers style, spelling and grammar conventions for all content published by Department for Work and Pensions (DWP). These patterns are based on the research and experience of the DWP content community.</p>
+<p class="lede">This guide covers style, spelling and grammar conventions for all content published by Department for Work and Pensions (DWP). These patterns are based on the research and experience of the DWP content community.</p>
 
 <p>Use the <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</a> as a reference for content style, spelling and grammar conventions for any service you’re working on.</p>
 
