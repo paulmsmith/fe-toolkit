@@ -35,9 +35,10 @@ a {
   }
   &-title {
     padding: 0;
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'nta'!important;
     display: inline-block;
+    font-weight: bold;
     &__title,
     &__phase {
       display: inline-block;
@@ -160,7 +161,7 @@ a {
   }
 
   p, li, dd, dt {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #333;
   }
 
@@ -192,6 +193,10 @@ a {
 		padding: 0;
 		border: 0;
 	}
+
+  .lede {
+    font-size: 1.3em;
+  }
 
 }
 

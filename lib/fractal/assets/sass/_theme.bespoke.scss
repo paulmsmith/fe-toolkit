@@ -34,6 +34,7 @@
 
 .Document-banner {
   margin-bottom: 20px;
+  max-width: 63em;
   img {
     max-width: 100%;
   }
@@ -70,7 +71,7 @@
 
 .demo {
 	position: relative;
-	margin: 2em 0 1em;
+	margin: 2.5em 0 1em;
 	padding: 20px;
 	border: 1px solid $panel-colour;
 	display: block;
