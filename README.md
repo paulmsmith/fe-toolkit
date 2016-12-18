@@ -1,10 +1,9 @@
+
+<img src="https://raw.githubusercontent.com/dwpdigitaltech/dwp-design/dev/app/assets/images/patch.jpg" alt="">
+
 # DWP Design System
 
 The DWP Design system is a collection of design patterns, components, and guidelines to ensure the creation of unified services for citizens and civil servants.
-
-<p align="center">
-	<img src="https://raw.githubusercontent.com/dwpdigitaltech/dwp-design/dev/app/assets/images/patch.jpg">
-</p>
 
 This repository contains the code and assets for a trial of [Fractal](http://fractal.build).
 
