@@ -31,10 +31,6 @@ const themeconfig = mandelbrot({
       "default",
       "/javascripts/scripts-fractal.js"
   ],
-  "scripts": [
-      "default",
-      "/javascripts/scripts-fractal.js"
-  ],
   "nav": [
     "docs",
     "components"
