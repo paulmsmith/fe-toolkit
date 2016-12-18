@@ -2,15 +2,18 @@
 
 The DWP Design system is a collection of design patterns, components, and guidelines to ensure the creation of unified services for citizens and civil servants.
 
+![Image of mission patch](https://raw.githubusercontent.com/dwpdigitaltech/dwp-design/dev/app/assets/images/patch.jpg)
+
 This repository contains the code and assets for a trial of [Fractal](http://fractal.build).
 
 ## To do:
 
-- [X] Scaffold app structure
-- [X] Update fractal configuration + theme
 - [X] Write gulp tasks (Fractal CLI, linting, building, compressing assets, ..etc)
 - [X] Integrate existing gov.uk frontend resources
 - [ ] Write documentation (Introduction/Overview, how-to, principles, code standards..) **[Started this]**
+- [ ] Create GOV.UK Elements frontend components
+- [ ] Investigate Design Tokens - Convert GOVUK colours to JSON/YAML
+- [ ] Train the team on updated content and documentation
 
 [See more in the project 'build'](https://github.com/paulmsmith/dwp-design/projects/2)
 
@@ -50,4 +53,4 @@ Pattern is reviewed, tested and built in the best way possible:
 
 ## Questions / Feedback
 
-Any questions or feedback, please raise an issue within this repository. When it's ready it will be moved to the organisation repository for wider contribution. I'm merely getting this up and running in my spare time because I believe it's important. I will 'show the thing' at a future UX or Frontend meeting.
+If you have any questions or feedback, please [file an issue](https://github.com/dwpdigitaltech/dwp-design/issues) in Github.
