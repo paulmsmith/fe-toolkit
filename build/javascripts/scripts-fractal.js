@@ -52,6 +52,9 @@
 		docs.accordion.init();
 	}
 
-	docs.init();
+	$(window).on("pageshow", function(e){
+		console.log('page show');
+		docs.init();
+	})
 
 }());
