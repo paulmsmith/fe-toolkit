@@ -7,10 +7,20 @@ $path:'/images/';
 
 @import "govuk-elements";
 
+/*
+  There's no sign of these styles in elements so I've recreated them here.
+*/
 .data {
   margin-bottom:1em;
 }
 .data-item {
   display:block;
   list-style: 1;
+}
+
+/*
+  Recent changes to phase banner not reflected.
+*/
+.phase-banner {
+  @include phase-banner();
 }
