@@ -1,0 +1,6 @@
+variants:
+- name: smaller
+  context:
+    type: smaller
+    modifier: button-start
+    text: This is a start button
