@@ -1,1 +1,16 @@
+/*
+  $path must be set to prevent the `file-url` mixin acting like
+  we're in some kind of crazy ruby on rails "pipeline" !?!?!
+  see govuk_modules/govuk_frontend_toolkit/stylesheets/_url-helpers.scss
+*/
+$path:'/images/';
+
 @import "govuk-elements";
+
+.data {
+  margin-bottom:1em;
+}
+.data-item {
+  display:block;
+  list-style: 1;
+}
