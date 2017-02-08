@@ -24,3 +24,5 @@ $path:'/images/';
 .phase-banner {
   @include phase-banner();
 }
+
+@import "dwp/alerts";
