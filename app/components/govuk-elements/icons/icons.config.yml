@@ -1,0 +1,35 @@
+title: Icons
+status: ready
+context:
+  type: important
+  text: You can be fined up to £5,000 if you don’t register.
+  alt: Warning
+variants:
+- name: information
+  context:
+    type: information
+    text: This is important information you should read.
+- name: file-download
+  context:
+    type: file-download
+    text: <a href="#">Download this file</a>
+# - name: search
+#   context:
+#     type: search
+#     text: Search
+# - name: locator
+#   context:
+#     type: locator
+#     text: Where is this thing.
+# - name: pointer
+#   context:
+#     type: pointer
+#     text: Where is this thing.
+# - name: pointer-black
+#   context:
+#     type: pointer-black
+#     text: Where is this thing.
+# - name: calendar
+#   context:
+#     type: calendar
+#     text: 19th January 2017

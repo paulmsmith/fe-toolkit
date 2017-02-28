@@ -1,0 +1,8 @@
+<div class="notice">
+  <i class="icon icon-{{ type }}">
+    <span class="visually-hidden">{{ alt }}</span>
+  </i>
+  <strong class="bold-small">
+    {{ text }}
+  </strong>
+</div>
