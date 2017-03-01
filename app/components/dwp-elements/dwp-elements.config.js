@@ -1,3 +1,4 @@
 module.exports = {
-	label: "DWP Elements"
+	label: "DWP Elements",
+	status: "experimental"
 }

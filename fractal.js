@@ -48,6 +48,24 @@ const themeconfig = mandelbrot({
   }
 });
 
+const statuses = {
+	experimental: {
+			label: "Experimental",
+			description: "This pattern is experimental.",
+			color: '#005ea5'
+	},
+	tried: {
+		label: "Tried & Tested",
+		description: "This pattern has been proven and is recommended",
+		color: "#005ea5"
+	},
+	recommended: {
+		label: "Recommended",
+		description: "This pattern has been proven and is recommended",
+		color: "#005ea5"
+	}
+}
+
 // init function for the theme
 themeconfig.on('init', function(env){
 	Object.keys(nunjfilters.filters).forEach(function (filterName) {
@@ -81,6 +99,8 @@ fractal.components.set('default.preview', '@preview')
 
 fractal.components.set('label', 'Design Patterns')
 
+fractal.components.set('statuses', statuses)
+
 /* fractal docs
 ----------------------------------------------------------------------------- */
 
@@ -92,6 +112,8 @@ fractal.docs.set('path', __dirname + '/app/docs')
 
 // set the label for the documentation
 fractal.docs.set('label','Docs')
+
+fractal.docs.set('statuses', statuses)
 
 // register the Nunjucks adapter for documentation
 fractal.docs.engine(nunj)

@@ -1,5 +1,6 @@
 module.exports = {
   label: "Content design",
+  status: "recommended",
 	context: {
 		guides: [
 			{
