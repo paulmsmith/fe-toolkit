@@ -1,6 +1,5 @@
 ---
-title: 'Add items to a list'
-label: 'Add to a list'
+label: 'Add multiple items'
 ---
 
 <h2 id="standard">Standard pattern</h2>

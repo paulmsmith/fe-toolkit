@@ -1,3 +1,3 @@
 module.exports = {
-  label: "Services"
+  label: "Products"
 };

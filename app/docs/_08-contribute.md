@@ -1,17 +1,18 @@
 ---
 title: 'How to contribute'
+label: 'How to contribute'
 ---
 
 <p>There are multiple ways to contribute, such as:</p>
 
 <ul>
 	<li>
-		Use the <a href="/docs/design-patterns">existing patterns</a> and share your research about 
+		Use the <a href="/docs/design-patterns">existing patterns</a> and share your research about
 		how well (or not) they worked within your service for it's users.
 	</li>
 	<li>
-		If you have patterns in your service which you believe will benefit others 
-		within DWP. You can <a href="/docs/about/submit">submit a pattern or research</a> for 
+		If you have patterns in your service which you believe will benefit others
+		within DWP. You can <a href="/docs/about/submit">submit a pattern or research</a> for
 		consideration.
 	</li>
 </ul>
@@ -49,6 +50,6 @@ This pattern library is powered by a customised open source software application
 
 <p>In github you will now have your own copy of the code to work with. Go to that page, the URL will be similar to:</p>
 
-`http://github.com/username/dwp-design` 
+`http://github.com/username/dwp-design`
 
 <p>Near the top of the page is a button to 'clone or download' <img src="/images/content/about/install/clone.png" alt="" class="dib dib--vam"> the code to your computer.</p>

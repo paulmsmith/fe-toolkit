@@ -12,10 +12,6 @@ label: 'Before you start'
 	<li>there's a genuine and proven risk of a negative consequence to the user or a third party if the user is not aware of this content</li>
 </ul>
 
-<div class="demo">
-	<img src="/images/content/patterns/before-you-start.png" alt="Screenshot of before you start pattern">
-</div>
-
 <h3 id="research-notes">Research notes</h3>
 
 <p>Qualitative research for Carer's Allowance found that GOV.UK content alone wasn't making people aware that applying for Carer's Allowance may (in certain circumstances) affect the benefits of the person they care for.</p>

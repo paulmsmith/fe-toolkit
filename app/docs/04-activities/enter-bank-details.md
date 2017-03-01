@@ -46,8 +46,6 @@ label: "Enter bank details"
 
 <p>Reading left to right and top to bottom most (not all) bank cards display information in this order:</p>
 
-<p class="text-align--center"><img src="/images/content/patterns/bank-details/card-sample.jpg" alt="" class="width--1/2@tablet"></p>
-
 <ol>
 	<li>card number</li>
 	<li>valid from</li>

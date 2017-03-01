@@ -79,7 +79,7 @@ fractal.components.set('path', __dirname + '/app/components')
 
 fractal.components.set('default.preview', '@preview')
 
-fractal.components.set('label', 'DWP Frontend')
+fractal.components.set('label', 'Design Patterns')
 
 /* fractal docs
 ----------------------------------------------------------------------------- */
