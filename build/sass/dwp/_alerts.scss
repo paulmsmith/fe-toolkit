@@ -1,0 +1,17 @@
+/*
+  DWP only styles for DWP Elements
+*/
+.alert-default {
+  border-color: $light-blue;
+  background-color: mix(white, $light-blue, 90%);
+}
+
+.alert-warning {
+  border-color: $red;
+  background-color: mix(white, $mellow-red, 90%);
+}
+
+.alert-success {
+  border-color: $turquoise;
+  background-color: mix(white, $turquoise, 90%);
+}
