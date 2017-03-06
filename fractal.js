@@ -36,10 +36,10 @@ const themeconfig = mandelbrot({
     "components"
   ],
   "panels": [
+		"html",
     "notes",
-    "html",
-    "view",
-    "context",
+    // "view",
+    // "context",
     "resources",
     "info"
   ],

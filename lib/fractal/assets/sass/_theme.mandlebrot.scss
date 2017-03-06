@@ -104,19 +104,19 @@ a {
 }
 
 .Frame-panel--sidebar {
-  width: 280px;
-  min-width: 280px;
+  width: 260px;
+  min-width: 260px;
   background: transparent;
 }
 
 .Tree {
   &-title {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: none;
   }
   > .Tree-items {
     padding: 0 0.75em;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -147,7 +147,7 @@ a {
   }
 
   li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
   }
 
 	h1, h2, h3, h4, h5, h6, p, ul, li, dt, dd {
@@ -161,7 +161,7 @@ a {
   }
 
   p, li, dd, dt {
-    font-size: 1.2em;
+    font-size: 1.15em;
     color: #333;
   }
 
@@ -213,7 +213,7 @@ a {
 .Browser {
   &-tab {
     a {
-      font-size: 20px;
+      font-size: 17px;
       font-family: 'nta';
     }
     svg {
@@ -228,6 +228,11 @@ a {
 }
 
 .Pen {
+	&-title {
+		font-family: nta;
+		font-size: 23px;
+		font-weight: normal;
+	}
   &-previewLink {
     svg  {
       fill: $colour-brand-department--dark;

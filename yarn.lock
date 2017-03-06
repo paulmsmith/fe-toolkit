@@ -49,9 +49,62 @@
     vinyl "^1.2.0"
     vorpal "^1.11.2"
 
+"@frctl/fractal@^1.1.0-alpha.0":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.3.tgz#be116c1b55a02746847d5b4cf1e76d36cf6ff458"
+  dependencies:
+    "@allmarkedup/fang" "^1.0.0"
+    "@frctl/handlebars" "^1.1.3"
+    "@frctl/mandelbrot" "^1.1.0"
+    anymatch "^1.3.0"
+    bluebird "^3.4.1"
+    browser-sync "^2.14.0"
+    chalk "^1.1.3"
+    chokidar "^1.6.0"
+    cli-table2 "^0.2.0"
+    co "^4.6.0"
+    columnify "^1.5.4"
+    express "^4.14.0"
+    fs-extra "^0.30.0"
+    globby "^6.0.0"
+    gray-matter "^2.0.2"
+    handlebars "^4.0.5"
+    highlight.js "^9.5.0"
+    inquirer "^1.1.2"
+    istextorbinary "^2.1.0"
+    js-yaml "^3.6.1"
+    liftoff "^2.3.0"
+    lodash "^4.14.1"
+    log-update "^1.0.2"
+    marked "^0.3.6"
+    mime "^1.3.4"
+    minimist "^1.2.0"
+    mixwith "^0.1.1"
+    nunjucks "^2.4.2"
+    path-to-regexp "^1.5.3"
+    portscanner "^1.0.0"
+    readable-stream "^2.1.4"
+    require-all "^2.0.0"
+    semver "^5.3.0"
+    shelljs "^0.7.3"
+    throat "^3.0.0"
+    update-notifier "^1.0.2"
+    vinyl "^1.2.0"
+    vorpal "^1.11.2"
+
 "@frctl/handlebars@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.2.tgz#722f295600b9f4d9fa5ad957dec4e6632f08424a"
+  dependencies:
+    "@frctl/fractal" "^1.0.0"
+    bluebird "^3.4.1"
+    handlebars "^4.0.5"
+    lodash "^4.12.0"
+    promised-handlebars "^2.0.0"
+
+"@frctl/handlebars@^1.1.3":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.4.tgz#8472988d75f0927dd28cfabd869a38487c652e40"
   dependencies:
     "@frctl/fractal" "^1.0.0"
     bluebird "^3.4.1"
@@ -64,6 +117,14 @@
   resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.0.7.tgz#380d2b8678d60a28ebdd8fd056be6ed98f785439"
   dependencies:
     "@frctl/fractal" "^1.0.5"
+    js-beautify "^1.6.2"
+    lodash "^4.12.0"
+
+"@frctl/mandelbrot@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.1.0.tgz#b3aa0870852d0d91b1657cc15d4025bad16ab1f8"
+  dependencies:
+    "@frctl/fractal" "^1.1.0-alpha.0"
     js-beautify "^1.6.2"
     lodash "^4.12.0"
 
@@ -1971,7 +2032,7 @@ gulp-serve@^1.2.0:
     gulp-util "^3.0.7"
     serve-static "^1.11.1"
 
-gulp-sourcemaps@1.6.0:
+gulp-sourcemaps@1.6.0, gulp-sourcemaps@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz#b86ff349d801ceb56e1d9e7dc7bbcb4b7dee600c"
   dependencies:
@@ -3075,11 +3136,11 @@ mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
   dependencies:
     mime-db "~1.25.0"
 
-mime@1.2.4, "mime@>= 0.0.1":
+mime@1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.2.4.tgz#11b5fdaf29c2509255176b80ad520294f5de92b7"
 
-mime@1.3.4, mime@^1.3.4:
+mime@1.3.4, "mime@>= 0.0.1", mime@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
 
@@ -3651,11 +3712,11 @@ qs@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
-qs@6.2.1, "qs@>= 0.4.0":
+qs@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
 
-qs@~6.3.0:
+"qs@>= 0.4.0", qs@~6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
