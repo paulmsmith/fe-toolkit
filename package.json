@@ -1,9 +1,9 @@
 {
-  "name": "dwp-patterns",
+  "name": "dwp-design",
   "version": "1.0.0",
   "description": "patterns and code for service design teams within the the UK Department for Work and Pensions",
   "repository": {
-    "url": "https://github.com/paulmsmith/dwp-design.git",
+    "url": "https://github.com/dwpdigitaltech/dwp-design.git",
     "type": "git"
   },
   "author": "Paul Smith <paulsmith.digitaldwp@gmail.com>",
