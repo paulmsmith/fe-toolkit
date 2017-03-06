@@ -1827,19 +1827,19 @@ got@^5.0.0:
     unzip-response "^1.0.2"
     url-parse-lax "^1.0.0"
 
-govuk-elements-sass@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/govuk-elements-sass/-/govuk-elements-sass-2.1.0.tgz#15e9e4d4f963f686d9af4282214725f73b9a1d8a"
+govuk-elements-sass@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/govuk-elements-sass/-/govuk-elements-sass-2.2.1.tgz#da4df6e803c3b07daa251ff59b922066b6229277"
   dependencies:
-    govuk_frontend_toolkit "^5.0.0"
+    govuk_frontend_toolkit "^5.0.2"
 
-govuk_frontend_toolkit@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/govuk_frontend_toolkit/-/govuk_frontend_toolkit-5.0.2.tgz#72cc68e166f41b6cb0f6eee2bf9a4e82439f7857"
+govuk_frontend_toolkit@^5.0.2, govuk_frontend_toolkit@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/govuk_frontend_toolkit/-/govuk_frontend_toolkit-5.1.1.tgz#d83651ca80a0f36c6d1f323809c4d550987904dd"
 
-govuk_template_jinja@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/govuk_template_jinja/-/govuk_template_jinja-0.19.0.tgz#dba5cdd125e502fb5ca5b548f19443141e915d1b"
+govuk_template_jinja@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/govuk_template_jinja/-/govuk_template_jinja-0.19.2.tgz#a0d0931c9acb9d882d5ec446be8732c56c536ab5"
 
 graceful-fs@^3.0.0:
   version "3.0.11"
