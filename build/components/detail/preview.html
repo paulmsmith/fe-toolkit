@@ -94,12 +94,6 @@
     </h1>
     
 
-<div class="Status Status--tag">
-
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
-
-</div>
-
 
 </div>
 
@@ -134,23 +128,7 @@
     <ul class="Browser-tabs">
         
         
-        <li class="Browser-tab Browser-tab--notes is-active " data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
-                
-
-<svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-
-                <span>Notes</span>
-            </a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--html" data-role="tab">
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
             <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-html">
                 
 
@@ -166,38 +144,17 @@
         
         
         
-        <li class="Browser-tab Browser-tab--view" data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
                 
 
 <svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
 </svg>
 
 
-                <span>View</span>
-            </a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-context">
-                
-
-<svg fill="#000000" height="19" viewBox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <path d="M0 0h24v24H0z" id="a"/>
-    </defs>
-    <clipPath id="b">
-        <use overflow="visible" xlink:href="#a"/>
-    </clipPath>
-    <path clip-path="url(#b)" d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z"/>
-</svg>
-
-
-                <span>Context</span>
+                <span>Notes</span>
             </a>
         </li>
         
@@ -227,15 +184,6 @@
     </ul>
 </div>
 
-
-    
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
-    <div class="Prose Prose--condensed">
-        
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
-        
-    </div>
-</div>
 
     
     <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-html">
@@ -300,62 +248,12 @@
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
-    <code class="Code Code--lang-">
-        <pre><span class="xml">
-<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-comment">&lt;!--[if lt IE 9]&gt;&lt;html class="lte-ie8" lang="</span></span><span class="hljs-template-variable">{{ html_lang|default('en') }}</span><span class="xml"><span class="hljs-comment">"&gt;&lt;![endif]--&gt;</span>
-<span class="hljs-comment">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ html_lang|default('en') }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: white"</span>&gt;</span><span class="hljs-comment">&lt;!--&lt;![endif]--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/stylesheets/govuk-<span class="hljs-builtin-name">template</span>.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"screen"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span><span class="hljs-comment">&lt;!--&lt;![endif]--&gt;</span>
-    <span class="hljs-comment">&lt;!--[if IE 6]&gt;&lt;link href="</span></span><span class="hljs-template-variable">{{ '/stylesheets/govuk-<span class="hljs-builtin-name">template</span>-ie6.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-comment">" media="screen" rel="stylesheet" /&gt;&lt;![endif]--&gt;</span>
-    <span class="hljs-comment">&lt;!--[if IE 7]&gt;&lt;link href="</span></span><span class="hljs-template-variable">{{ '/stylesheets/govuk-<span class="hljs-builtin-name">template</span>-ie7.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-comment">" media="screen" rel="stylesheet" /&gt;&lt;![endif]--&gt;</span>
-    <span class="hljs-comment">&lt;!--[if IE 8]&gt;&lt;link href="</span></span><span class="hljs-template-variable">{{ '/stylesheets/govuk-<span class="hljs-builtin-name">template</span>-ie8.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-comment">" media="screen" rel="stylesheet" /&gt;&lt;![endif]--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/stylesheets/govuk-<span class="hljs-builtin-name">template</span>-print.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"print"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span>
-
-    <span class="hljs-comment">&lt;!--[if IE 8]&gt;&lt;link href="</span></span><span class="hljs-template-variable">{{ '/stylesheets/fonts-ie8.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-comment">" media="all" rel="stylesheet" /&gt;&lt;![endif]--&gt;</span>
-    <span class="hljs-comment">&lt;!--[if gte IE 9]&gt;&lt;!--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/stylesheets/fonts.css?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span><span class="hljs-comment">&lt;!--&lt;![endif]--&gt;</span>
-    <span class="hljs-comment">&lt;!--[if lt IE 9]&gt;&lt;script src="</span></span><span class="hljs-template-variable">{{ '/javascripts/ie.js?0.18.3' | path }}</span><span class="xml"><span class="hljs-comment">"&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"shortcut icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/favicon.ico?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/x-icon"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"mask-icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/gov.uk_logotype_crown.svg?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#0b0c0c"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon-precomposed"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"152x152"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/apple-touch-icon-152x152.png?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon-precomposed"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"120x120"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/apple-touch-icon-120x120.png?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon-precomposed"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"76x76"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/apple-touch-icon-76x76.png?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon-precomposed"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/apple-touch-icon-60x60.png?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"og:image"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/images/opengraph-image.png?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/stylesheets/styles.css' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"screen"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Preview<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.body.className = ((<span class="hljs-built_in">document</span>.body.className) ? <span class="hljs-built_in">document</span>.body.className + <span class="hljs-string">' js-enabled'</span> : <span class="hljs-string">'js-enabled'</span>);</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"main"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-</span><span class="hljs-template-variable">{{ <span class="hljs-builtin-name">yield</span> | safe }}</span><span class="xml">
-<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ '/javascripts/govuk-<span class="hljs-builtin-name">template</span>.js?0.18.3' | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span>.GOVUK === <span class="hljs-string">'undefined'</span>) <span class="hljs-built_in">document</span>.body.className = <span class="hljs-built_in">document</span>.body.className.replace(<span class="hljs-string">'js-enabled'</span>, <span class="hljs-string">''</span>);</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</span></pre>
-    </code>
-</div>
-
-    
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-context">
-    
-    
-    <code class="Code Code--lang-js">
-        <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-    </code>
-    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
 </div>
 
     
@@ -617,42 +515,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/design-patterns/third-party-help.html" data-pjax>
                 <span>Third party help</span>
-                
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-elements">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Elements</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/elements/cookie-banner.html" data-pjax>
-                <span>Cookie banner</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/elements/footer.html" data-pjax>
-                <span>Footer</span>
                 
             </a>
         </li>

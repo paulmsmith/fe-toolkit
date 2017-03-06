@@ -8,9 +8,9 @@
   },
   "author": "Paul Smith <paulsmith.digitaldwp@gmail.com>",
   "dependencies": {
-    "@frctl/fractal": "^1.0.9",
+    "@frctl/fractal": "^1.1.3",
     "@frctl/mandelbrot": "^1.1.0",
-    "@frctl/nunjucks": "^1.0.2",
+    "@frctl/nunjucks": "^1.0.3",
     "browser-sync": "^2.7.10",
     "cross-spawn": "^5.0.1",
     "del": "^2.2.0",

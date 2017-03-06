@@ -96,7 +96,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+<label class="Status-label" style="background-color: #005ea5; border-color: #005ea5;">Experimental</label>
 
 </div>
 
@@ -134,23 +134,7 @@
     <ul class="Browser-tabs">
         
         
-        <li class="Browser-tab Browser-tab--notes is-active " data-role="tab">
-            <a href="#browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-notes">
-                
-
-<svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-
-                <span>Notes</span>
-            </a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--html" data-role="tab">
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
             <a href="#browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-html">
                 
 
@@ -166,38 +150,17 @@
         
         
         
-        <li class="Browser-tab Browser-tab--view" data-role="tab">
-            <a href="#browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-view">
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-notes">
                 
 
 <svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
 </svg>
 
 
-                <span>View</span>
-            </a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-context">
-                
-
-<svg fill="#000000" height="19" viewBox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <path d="M0 0h24v24H0z" id="a"/>
-    </defs>
-    <clipPath id="b">
-        <use overflow="visible" xlink:href="#a"/>
-    </clipPath>
-    <path clip-path="url(#b)" d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z"/>
-</svg>
-
-
-                <span>Context</span>
+                <span>Notes</span>
             </a>
         </li>
         
@@ -227,15 +190,6 @@
     </ul>
 </div>
 
-
-    
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-notes">
-    <div class="Prose Prose--condensed">
-        
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
-        
-    </div>
-</div>
 
     
     <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-html">
@@ -280,53 +234,12 @@
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-view">
-    <code class="Code Code--lang-">
-        <pre>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"error-summary"</span> role=<span class="hljs-string">"group"</span> aria-labelledby=<span class="hljs-string">"error-summary-heading-example-1"</span> tabindex=<span class="hljs-string">"-1"</span>&gt;
-  &lt;h1 <span class="hljs-built_in">class</span>=<span class="hljs-string">"heading-medium error-summary-heading"</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"error-summary-heading-example-1"</span>&gt;Message <span class="hljs-keyword">to</span> alert <span class="hljs-keyword">the</span> user <span class="hljs-keyword">to</span> a problem goes here&lt;/h1&gt;
-  &lt;p&gt;Optional description <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> errors <span class="hljs-keyword">and</span> how <span class="hljs-keyword">to</span> correct them&lt;/p&gt;
-  &lt;ul <span class="hljs-built_in">class</span>=<span class="hljs-string">"error-summary-list"</span>&gt;
-    &lt;li&gt;&lt;a href=<span class="hljs-string">"#example-personal-details"</span>&gt;Descriptive link <span class="hljs-keyword">to</span> <span class="hljs-keyword">the</span> question <span class="hljs-keyword">with</span> an <span class="hljs-keyword">error</span>&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-
-&lt;h1 <span class="hljs-built_in">class</span>=<span class="hljs-string">"heading-large"</span>&gt;Check your personal details&lt;/h1&gt;
-&lt;p&gt;Look <span class="hljs-keyword">at</span> your <span class="hljs-built_in">name</span>, signature <span class="hljs-keyword">and</span> other details.&lt;/p&gt;
-
-&lt;form&gt;
-
-  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"form-group error"</span>&gt;
-    &lt;fieldset&gt;
-      &lt;legend <span class="hljs-built_in">id</span>=<span class="hljs-string">"example-personal-details"</span>&gt;
-        &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"form-label-bold"</span>&gt; Are your personal details correct <span class="hljs-keyword">and</span> up-<span class="hljs-keyword">to</span>-<span class="hljs-built_in">date</span>? &lt;/span&gt;
-        &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"error-message"</span>&gt; Error message <span class="hljs-keyword">about</span> personal details goes here &lt;/span&gt;
-      &lt;/legend&gt;
-      &lt;label <span class="hljs-built_in">class</span>=<span class="hljs-string">"block-label selection-button-radio"</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"personal_details_yes"</span>&gt;
-        &lt;input <span class="hljs-built_in">id</span>=<span class="hljs-string">"personal_details_yes"</span> type=<span class="hljs-string">"radio"</span> <span class="hljs-built_in">name</span>=<span class="hljs-string">"personalDetails"</span> value=<span class="hljs-string">"Yes"</span>&gt;
-        Yes, <span class="hljs-keyword">my</span> personal details are correct
-      &lt;/label&gt;
-      &lt;label <span class="hljs-built_in">class</span>=<span class="hljs-string">"block-label selection-button-radio"</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"personal_details_no"</span>&gt;
-        &lt;input <span class="hljs-built_in">id</span>=<span class="hljs-string">"personal_details_no"</span> type=<span class="hljs-string">"radio"</span> <span class="hljs-built_in">name</span>=<span class="hljs-string">"personalDetails"</span> value=<span class="hljs-string">"No"</span>&gt;
-        No, <span class="hljs-keyword">some</span> details are wrong <span class="hljs-keyword">or</span> have changed
-      &lt;/label&gt;
-    &lt;/fieldset&gt;
-  &lt;/<span class="hljs-keyword">div</span>&gt;
-
-  &lt;input <span class="hljs-built_in">class</span>=<span class="hljs-string">"button"</span> type=<span class="hljs-string">"submit"</span> value=<span class="hljs-string">"Continue"</span>&gt;
-
-&lt;/form&gt;
-</pre>
-    </code>
-</div>
-
-    
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-context">
-    
-    
-    <code class="Code Code--lang-js">
-        <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-    </code>
-    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-3aa1e337dd82c6df6c7af07e1779e3cb-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
 </div>
 
     
@@ -588,42 +501,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/design-patterns/third-party-help.html" data-pjax>
                 <span>Third party help</span>
-                
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-elements">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span><strong>Elements</strong></span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/elements/cookie-banner.html" data-pjax>
-                <span>Cookie banner</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/elements/footer.html" data-pjax>
-                <span>Footer</span>
                 
             </a>
         </li>

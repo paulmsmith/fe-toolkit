@@ -6,50 +6,7 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
-"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.0.5", "@frctl/fractal@^1.0.9":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.0.11.tgz#a11b97a4f967312147da6f32baeacb15478fe74c"
-  dependencies:
-    "@allmarkedup/fang" "^1.0.0"
-    "@frctl/handlebars" "^1.1.2"
-    "@frctl/mandelbrot" "^1.0.7"
-    anymatch "^1.3.0"
-    bluebird "^3.4.1"
-    browser-sync "^2.14.0"
-    chalk "^1.1.3"
-    chokidar "^1.6.0"
-    cli-table2 "^0.2.0"
-    co "^4.6.0"
-    columnify "^1.5.4"
-    express "^4.14.0"
-    fs-extra "^0.30.0"
-    globby "^6.0.0"
-    gray-matter "^2.0.2"
-    handlebars "^4.0.5"
-    highlight.js "^9.5.0"
-    inquirer "^1.1.2"
-    istextorbinary "^2.1.0"
-    js-yaml "^3.6.1"
-    liftoff "^2.3.0"
-    lodash "^4.14.1"
-    log-update "^1.0.2"
-    marked "^0.3.6"
-    mime "^1.3.4"
-    minimist "^1.2.0"
-    mixwith "^0.1.1"
-    nunjucks "^2.4.2"
-    path-to-regexp "^1.5.3"
-    portscanner "^1.0.0"
-    readable-stream "^2.1.4"
-    require-all "^2.0.0"
-    semver "^5.3.0"
-    shelljs "^0.7.3"
-    throat "^3.0.0"
-    update-notifier "^1.0.2"
-    vinyl "^1.2.0"
-    vorpal "^1.11.2"
-
-"@frctl/fractal@^1.1.0-alpha.0":
+"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.3.tgz#be116c1b55a02746847d5b4cf1e76d36cf6ff458"
   dependencies:
@@ -92,16 +49,6 @@
     vinyl "^1.2.0"
     vorpal "^1.11.2"
 
-"@frctl/handlebars@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.2.tgz#722f295600b9f4d9fa5ad957dec4e6632f08424a"
-  dependencies:
-    "@frctl/fractal" "^1.0.0"
-    bluebird "^3.4.1"
-    handlebars "^4.0.5"
-    lodash "^4.12.0"
-    promised-handlebars "^2.0.0"
-
 "@frctl/handlebars@^1.1.3":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.4.tgz#8472988d75f0927dd28cfabd869a38487c652e40"
@@ -112,14 +59,6 @@
     lodash "^4.12.0"
     promised-handlebars "^2.0.0"
 
-"@frctl/mandelbrot@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.0.7.tgz#380d2b8678d60a28ebdd8fd056be6ed98f785439"
-  dependencies:
-    "@frctl/fractal" "^1.0.5"
-    js-beautify "^1.6.2"
-    lodash "^4.12.0"
-
 "@frctl/mandelbrot@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.1.0.tgz#b3aa0870852d0d91b1657cc15d4025bad16ab1f8"
@@ -128,9 +67,9 @@
     js-beautify "^1.6.2"
     lodash "^4.12.0"
 
-"@frctl/nunjucks@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-1.0.2.tgz#ffb2bbd5e0204bb1b071261258635df955cfc36b"
+"@frctl/nunjucks@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-1.0.3.tgz#baf5e74944417b22085c616e92d07594d6523d2d"
   dependencies:
     "@frctl/fractal" "^1.0.0-rc.1"
     bluebird "^3.3.4"
