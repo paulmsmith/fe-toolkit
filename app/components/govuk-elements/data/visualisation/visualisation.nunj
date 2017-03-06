@@ -1,0 +1,11 @@
+{% if type == "smaller" %}
+<div class="data">
+  <span class="data-item bold-xlarge">56/154</span>
+  <span class="data-item bold-xsmall">on GOV.UK</span>
+</div>
+{% else %}
+<div class="data">
+  <span class="data-item bold-xxlarge">24</span>
+  <span class="data-item bold-xsmall">Ministerial departments</span>
+</div>
+{% endif %}

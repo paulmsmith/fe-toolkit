@@ -6,13 +6,13 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
-"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.0.5", "@frctl/fractal@^1.0.9":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.0.11.tgz#a11b97a4f967312147da6f32baeacb15478fe74c"
+"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.3.tgz#be116c1b55a02746847d5b4cf1e76d36cf6ff458"
   dependencies:
     "@allmarkedup/fang" "^1.0.0"
-    "@frctl/handlebars" "^1.1.2"
-    "@frctl/mandelbrot" "^1.0.7"
+    "@frctl/handlebars" "^1.1.3"
+    "@frctl/mandelbrot" "^1.1.0"
     anymatch "^1.3.0"
     bluebird "^3.4.1"
     browser-sync "^2.14.0"
@@ -49,9 +49,9 @@
     vinyl "^1.2.0"
     vorpal "^1.11.2"
 
-"@frctl/handlebars@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.2.tgz#722f295600b9f4d9fa5ad957dec4e6632f08424a"
+"@frctl/handlebars@^1.1.3":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.1.4.tgz#8472988d75f0927dd28cfabd869a38487c652e40"
   dependencies:
     "@frctl/fractal" "^1.0.0"
     bluebird "^3.4.1"
@@ -59,17 +59,17 @@
     lodash "^4.12.0"
     promised-handlebars "^2.0.0"
 
-"@frctl/mandelbrot@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.0.7.tgz#380d2b8678d60a28ebdd8fd056be6ed98f785439"
+"@frctl/mandelbrot@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.1.0.tgz#b3aa0870852d0d91b1657cc15d4025bad16ab1f8"
   dependencies:
-    "@frctl/fractal" "^1.0.5"
+    "@frctl/fractal" "^1.1.0-alpha.0"
     js-beautify "^1.6.2"
     lodash "^4.12.0"
 
-"@frctl/nunjucks@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-1.0.2.tgz#ffb2bbd5e0204bb1b071261258635df955cfc36b"
+"@frctl/nunjucks@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-1.0.3.tgz#baf5e74944417b22085c616e92d07594d6523d2d"
   dependencies:
     "@frctl/fractal" "^1.0.0-rc.1"
     bluebird "^3.3.4"
@@ -1827,19 +1827,19 @@ got@^5.0.0:
     unzip-response "^1.0.2"
     url-parse-lax "^1.0.0"
 
-govuk-elements-sass@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/govuk-elements-sass/-/govuk-elements-sass-2.1.0.tgz#15e9e4d4f963f686d9af4282214725f73b9a1d8a"
+govuk-elements-sass@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/govuk-elements-sass/-/govuk-elements-sass-2.2.1.tgz#da4df6e803c3b07daa251ff59b922066b6229277"
   dependencies:
-    govuk_frontend_toolkit "^5.0.0"
+    govuk_frontend_toolkit "^5.0.2"
 
-govuk_frontend_toolkit@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/govuk_frontend_toolkit/-/govuk_frontend_toolkit-5.0.2.tgz#72cc68e166f41b6cb0f6eee2bf9a4e82439f7857"
+govuk_frontend_toolkit@^5.0.2, govuk_frontend_toolkit@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/govuk_frontend_toolkit/-/govuk_frontend_toolkit-5.1.1.tgz#d83651ca80a0f36c6d1f323809c4d550987904dd"
 
-govuk_template_jinja@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/govuk_template_jinja/-/govuk_template_jinja-0.19.0.tgz#dba5cdd125e502fb5ca5b548f19443141e915d1b"
+govuk_template_jinja@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/govuk_template_jinja/-/govuk_template_jinja-0.19.2.tgz#a0d0931c9acb9d882d5ec446be8732c56c536ab5"
 
 graceful-fs@^3.0.0:
   version "3.0.11"
@@ -1971,7 +1971,7 @@ gulp-serve@^1.2.0:
     gulp-util "^3.0.7"
     serve-static "^1.11.1"
 
-gulp-sourcemaps@1.6.0:
+gulp-sourcemaps@1.6.0, gulp-sourcemaps@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz#b86ff349d801ceb56e1d9e7dc7bbcb4b7dee600c"
   dependencies:
@@ -3075,11 +3075,11 @@ mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
   dependencies:
     mime-db "~1.25.0"
 
-mime@1.2.4, "mime@>= 0.0.1":
+mime@1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.2.4.tgz#11b5fdaf29c2509255176b80ad520294f5de92b7"
 
-mime@1.3.4, mime@^1.3.4:
+mime@1.3.4, "mime@>= 0.0.1", mime@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
 
@@ -3651,11 +3651,11 @@ qs@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
-qs@6.2.1, "qs@>= 0.4.0":
+qs@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
 
-qs@~6.3.0:
+"qs@>= 0.4.0", qs@~6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 

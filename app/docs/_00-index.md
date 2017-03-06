@@ -1,6 +1,7 @@
 ---
 title: 'Welcome'
 label: 'Home'
+status: hide
 context:
   banner:
     url: "/images/content/fractal_banner.jpg"

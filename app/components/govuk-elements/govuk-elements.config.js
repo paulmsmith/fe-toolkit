@@ -1,3 +1,4 @@
 module.exports = {
-	label: "GOVUK Elements"
+	label: "GOVUK Elements",
+	status: "experimental"
 }
