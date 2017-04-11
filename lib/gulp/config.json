@@ -10,7 +10,7 @@
       "docs" : "app/docs/",
       "theme" : "lib/fractal/theme",
       "lib" : "lib/fractal/lib",
-      "sass": "lib/fractal/assets/sass/",
+      "sass": "lib/fractal/assets/sass",
 			"scripts": "lib/fractal/assets/javascripts"
     }
   }
