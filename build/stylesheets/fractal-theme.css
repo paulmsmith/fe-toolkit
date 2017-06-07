@@ -30,8 +30,7 @@ body, h1 {
 }
 
 a {
-  -webkit-transition: none;
-          transition: none;
+  transition: none;
   color: #008b86;
 }
 

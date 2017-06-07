@@ -97,7 +97,7 @@ fractal.components.set('path', __dirname + '/app/components')
 
 fractal.components.set('default.preview', '@preview')
 
-fractal.components.set('label', 'Design Patterns')
+fractal.components.set('label', 'Components')
 
 fractal.components.set('statuses', statuses)
 
@@ -111,7 +111,7 @@ fractal.docs.set('ext', '.md')
 fractal.docs.set('path', __dirname + '/app/docs')
 
 // set the label for the documentation
-fractal.docs.set('label','Docs')
+fractal.docs.set('label','Design documentation')
 
 fractal.docs.set('statuses', statuses)
 

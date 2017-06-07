@@ -1,0 +1,11 @@
+ <div class="form-group">
+  <fieldset>
+    <legend class="heading-medium">{{ questionText }}</legend>
+    {% for option in options %}
+		<div class="multiple-choice">
+			<input id="{{ id }}-{{ option.value }}" type="radio" name="{{ id }}" value="{{ option.value }}">
+	    <label class="block-label" for="{{ id }}-{{ option.value }}">{{ option.label }}</label>
+		</div>
+    {% endfor %}
+  </fieldset>
+ </div>

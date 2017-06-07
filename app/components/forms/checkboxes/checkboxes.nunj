@@ -1,0 +1,12 @@
+ <div class="form-group">
+  <fieldset>
+    <legend class="heading-medium">{{ questionText }}</legend>
+    <p>Select all that apply:</p>
+    {% for option in options %}
+		<div class="multiple-choice">
+			<input id="{{ id }}-{{ option.value }}" type="checkbox" value="{{ option.value }}">
+			<label class="block-label" for="{{ id }}-{{ option.value }}">{{ option.label }}</label>
+		</div>
+    {% endfor %}
+  </fieldset>
+ </div>
