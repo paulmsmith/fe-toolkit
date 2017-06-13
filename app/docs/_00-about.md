@@ -1,5 +1,6 @@
 ---
 title: 'About the DWP Design System'
+status: 'none'
 ---
 
 <h2 id="understandable-outputs">Mission statement</h2>
